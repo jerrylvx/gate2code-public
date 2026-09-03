@@ -1,0 +1,77 @@
+{
+  "source": "code_48_3_3_fg48.npz",
+  "codewords_checked": 512,
+  "checks": [
+    {
+      "name": "stored Q48 admits a native T/T-dagger pattern",
+      "passed": true,
+      "detail": "26 T + 22 T-dagger"
+    },
+    {
+      "name": "C_2 is 8-divisible",
+      "passed": true,
+      "detail": "64 stabilizer codewords"
+    },
+    {
+      "name": "eq:exp-divladder holds for S",
+      "passed": true,
+      "detail": "|S_l| mod 8, pairs mod 4, triples mod 2"
+    },
+    {
+      "name": "the ladder reduces mod 2 to S1-S3",
+      "passed": true,
+      "detail": "S1-S3 are the mod-2 shadow"
+    },
+    {
+      "name": "eq:exp-CI: sw_Gamma(c) == 4 x1x2x3 (mod 8)",
+      "passed": true,
+      "detail": "512 codewords"
+    },
+    {
+      "name": "eq:exp-Z4: 2(gamma.c) == |c| - 4 x1x2x3 (mod 8)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "eq:exp-Z4half: gamma.c == |c|/2 - 2 x1x2x3 (mod 4)",
+      "passed": true,
+      "detail": "halving is legitimate because every codeword weight is even"
+    },
+    {
+      "name": "necessity budget with lam_jj' = 0 reproduces eq:exp-CI",
+      "passed": true,
+      "detail": "|c| + 2 sum_j lam_j c_j == 4 x1x2x3, lam = -gamma mod 4"
+    },
+    {
+      "name": "x=0 slice: sw_Gamma(c) == 0 (mod 8) on C_2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "x=0 slice at Gamma = 1 is exactly 8-divisibility",
+      "passed": true,
+      "detail": "sw_1(c) = |c|"
+    },
+    {
+      "name": "8-divisible C_2 forces gamma.c == 0 (mod 4) on C_2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "hence gamma lies in C_2-perp",
+      "passed": true,
+      "detail": "mod-2 reduction of the previous line"
+    },
+    {
+      "name": "sw_Gamma(c) = |c xor gamma| - |gamma|",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "each coset gamma + K^T x + C_2 has constant weight mod 8",
+      "passed": true,
+      "detail": "the constant is |gamma| + 4 x1x2x3"
+    }
+  ],
+  "all_passed": true
+}

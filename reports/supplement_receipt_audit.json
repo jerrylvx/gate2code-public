@@ -1,0 +1,19 @@
+{
+  "s5": {
+    "activities": 63,
+    "simplex_pairs": 49741825,
+    "simplex_result": "unsat"
+  },
+  "rank8": {
+    "systems": 17638496,
+    "k3_rejections": 13274528,
+    "third_label_systems": 4363968,
+    "third_label_result": "all inconsistent",
+    "weight14_representatives": 124,
+    "missing": 0,
+    "deferred": 0,
+    "survivors": 0
+  },
+  "orbit_cover_complete": true,
+  "all_checks_passed": true
+}

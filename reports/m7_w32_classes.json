@@ -1,0 +1,8 @@
+{
+ "summary": {
+  "claim": "weight-32 affine classes at m=7 (KTA Cor 1 + Dickson quadratic)",
+  "cor1_abc": "all unsat, plain + all punctures (decided twice: 424/452/455s and 138s runs)",
+  "quad_h1": "support = 5-flat; completion system intrinsic to the flat (RM(2,7)|_flat = RM(2,5)); covered by the s=6 n=31/32 closure (reports/s6_window_3132_bucketed.json) - no separate decision needed",
+  "all_unsat": true
+ }
+}

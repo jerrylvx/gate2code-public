@@ -1,0 +1,658 @@
+{
+ "summary": {
+  "claim": "no CH code (k=3, dZ>=3) on any KT-classified support (weight <= 32), uniformly in s",
+  "classes_decided": 64,
+  "all_unsat": true,
+  "seconds": 8.0
+ },
+ "classes": [
+  {
+   "type": "ii",
+   "nu": 2,
+   "mu": 1,
+   "s_eff": 2,
+   "branch": "plain",
+   "n": 1,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 2,
+   "mu": 1,
+   "s_eff": 2,
+   "branch": "punctured",
+   "n": 0,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 3,
+   "mu": 1,
+   "s_eff": 3,
+   "branch": "plain",
+   "n": 1,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 3,
+   "mu": 1,
+   "s_eff": 3,
+   "branch": "punctured",
+   "n": 0,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 4,
+   "mu": 1,
+   "s_eff": 4,
+   "branch": "plain",
+   "n": 1,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 4,
+   "mu": 1,
+   "s_eff": 4,
+   "branch": "punctured",
+   "n": 0,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 5,
+   "mu": 1,
+   "s_eff": 5,
+   "branch": "plain",
+   "n": 1,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 5,
+   "mu": 1,
+   "s_eff": 5,
+   "branch": "punctured",
+   "n": 0,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 6,
+   "mu": 1,
+   "s_eff": 6,
+   "branch": "plain",
+   "n": 1,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 6,
+   "mu": 1,
+   "s_eff": 6,
+   "branch": "punctured",
+   "n": 0,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 7,
+   "mu": 1,
+   "s_eff": 7,
+   "branch": "plain",
+   "n": 1,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 7,
+   "mu": 1,
+   "s_eff": 7,
+   "branch": "punctured",
+   "n": 0,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 8,
+   "mu": 1,
+   "s_eff": 8,
+   "branch": "plain",
+   "n": 1,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 8,
+   "mu": 1,
+   "s_eff": 8,
+   "branch": "punctured",
+   "n": 0,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 2,
+   "mu": 2,
+   "s_eff": 4,
+   "branch": "plain",
+   "n": 6,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 2,
+   "mu": 2,
+   "s_eff": 4,
+   "branch": "punctured",
+   "n": 5,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 3,
+   "mu": 2,
+   "s_eff": 5,
+   "branch": "plain",
+   "n": 6,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 3,
+   "mu": 2,
+   "s_eff": 5,
+   "branch": "punctured",
+   "n": 5,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 4,
+   "mu": 2,
+   "s_eff": 6,
+   "branch": "plain",
+   "n": 6,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 4,
+   "mu": 2,
+   "s_eff": 6,
+   "branch": "punctured",
+   "n": 5,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 5,
+   "mu": 2,
+   "s_eff": 7,
+   "branch": "plain",
+   "n": 6,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 5,
+   "mu": 2,
+   "s_eff": 7,
+   "branch": "punctured",
+   "n": 5,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 6,
+   "mu": 2,
+   "s_eff": 8,
+   "branch": "plain",
+   "n": 6,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 6,
+   "mu": 2,
+   "s_eff": 8,
+   "branch": "punctured",
+   "n": 5,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 7,
+   "mu": 2,
+   "s_eff": 9,
+   "branch": "plain",
+   "n": 6,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 7,
+   "mu": 2,
+   "s_eff": 9,
+   "branch": "punctured",
+   "n": 5,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 8,
+   "mu": 2,
+   "s_eff": 10,
+   "branch": "plain",
+   "n": 6,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "ii",
+   "nu": 8,
+   "mu": 2,
+   "s_eff": 10,
+   "branch": "punctured",
+   "n": 5,
+   "result": "skip (n<9 trivially short)"
+  },
+  {
+   "type": "i",
+   "nu": 3,
+   "mu": 3,
+   "s_eff": 6,
+   "branch": "plain",
+   "n": 14,
+   "result": "unsat",
+   "dimV": 1,
+   "pairs": 1
+  },
+  {
+   "type": "i",
+   "nu": 3,
+   "mu": 3,
+   "s_eff": 6,
+   "branch": "punctured",
+   "n": 13,
+   "result": "unsat",
+   "dimV": 0,
+   "pairs": 0
+  },
+  {
+   "type": "i",
+   "nu": 4,
+   "mu": 3,
+   "s_eff": 7,
+   "branch": "plain",
+   "n": 14,
+   "result": "unsat",
+   "dimV": 1,
+   "pairs": 1
+  },
+  {
+   "type": "i",
+   "nu": 4,
+   "mu": 3,
+   "s_eff": 7,
+   "branch": "punctured",
+   "n": 13,
+   "result": "unsat",
+   "dimV": 0,
+   "pairs": 0
+  },
+  {
+   "type": "i",
+   "nu": 5,
+   "mu": 3,
+   "s_eff": 8,
+   "branch": "plain",
+   "n": 14,
+   "result": "unsat",
+   "dimV": 1,
+   "pairs": 1
+  },
+  {
+   "type": "i",
+   "nu": 5,
+   "mu": 3,
+   "s_eff": 8,
+   "branch": "punctured",
+   "n": 13,
+   "result": "unsat",
+   "dimV": 0,
+   "pairs": 0
+  },
+  {
+   "type": "i",
+   "nu": 6,
+   "mu": 3,
+   "s_eff": 9,
+   "branch": "plain",
+   "n": 14,
+   "result": "unsat",
+   "dimV": 1,
+   "pairs": 1
+  },
+  {
+   "type": "i",
+   "nu": 6,
+   "mu": 3,
+   "s_eff": 9,
+   "branch": "punctured",
+   "n": 13,
+   "result": "unsat",
+   "dimV": 0,
+   "pairs": 0
+  },
+  {
+   "type": "i",
+   "nu": 7,
+   "mu": 3,
+   "s_eff": 10,
+   "branch": "plain",
+   "n": 14,
+   "result": "unsat",
+   "dimV": 1,
+   "pairs": 1
+  },
+  {
+   "type": "i",
+   "nu": 7,
+   "mu": 3,
+   "s_eff": 10,
+   "branch": "punctured",
+   "n": 13,
+   "result": "unsat",
+   "dimV": 0,
+   "pairs": 0
+  },
+  {
+   "type": "i",
+   "nu": 8,
+   "mu": 3,
+   "s_eff": 11,
+   "branch": "plain",
+   "n": 14,
+   "result": "unsat",
+   "dimV": 1,
+   "pairs": 1
+  },
+  {
+   "type": "i",
+   "nu": 8,
+   "mu": 3,
+   "s_eff": 11,
+   "branch": "punctured",
+   "n": 13,
+   "result": "unsat",
+   "dimV": 0,
+   "pairs": 0
+  },
+  {
+   "type": "ii",
+   "nu": 2,
+   "mu": 3,
+   "s_eff": 6,
+   "branch": "plain",
+   "n": 28,
+   "result": "unsat",
+   "dimV": 7,
+   "pairs": 16129
+  },
+  {
+   "type": "ii",
+   "nu": 2,
+   "mu": 3,
+   "s_eff": 6,
+   "branch": "punctured",
+   "n": 27,
+   "result": "unsat",
+   "dimV": 6,
+   "pairs": 3969
+  },
+  {
+   "type": "ii",
+   "nu": 3,
+   "mu": 3,
+   "s_eff": 7,
+   "branch": "plain",
+   "n": 28,
+   "result": "unsat",
+   "dimV": 7,
+   "pairs": 16129
+  },
+  {
+   "type": "ii",
+   "nu": 3,
+   "mu": 3,
+   "s_eff": 7,
+   "branch": "punctured",
+   "n": 27,
+   "result": "unsat",
+   "dimV": 6,
+   "pairs": 3969
+  },
+  {
+   "type": "ii",
+   "nu": 4,
+   "mu": 3,
+   "s_eff": 8,
+   "branch": "plain",
+   "n": 28,
+   "result": "unsat",
+   "dimV": 7,
+   "pairs": 16129
+  },
+  {
+   "type": "ii",
+   "nu": 4,
+   "mu": 3,
+   "s_eff": 8,
+   "branch": "punctured",
+   "n": 27,
+   "result": "unsat",
+   "dimV": 6,
+   "pairs": 3969
+  },
+  {
+   "type": "ii",
+   "nu": 5,
+   "mu": 3,
+   "s_eff": 9,
+   "branch": "plain",
+   "n": 28,
+   "result": "unsat",
+   "dimV": 7,
+   "pairs": 16129
+  },
+  {
+   "type": "ii",
+   "nu": 5,
+   "mu": 3,
+   "s_eff": 9,
+   "branch": "punctured",
+   "n": 27,
+   "result": "unsat",
+   "dimV": 6,
+   "pairs": 3969
+  },
+  {
+   "type": "ii",
+   "nu": 6,
+   "mu": 3,
+   "s_eff": 10,
+   "branch": "plain",
+   "n": 28,
+   "result": "unsat",
+   "dimV": 7,
+   "pairs": 16129
+  },
+  {
+   "type": "ii",
+   "nu": 6,
+   "mu": 3,
+   "s_eff": 10,
+   "branch": "punctured",
+   "n": 27,
+   "result": "unsat",
+   "dimV": 6,
+   "pairs": 3969
+  },
+  {
+   "type": "ii",
+   "nu": 7,
+   "mu": 3,
+   "s_eff": 11,
+   "branch": "plain",
+   "n": 28,
+   "result": "unsat",
+   "dimV": 7,
+   "pairs": 16129
+  },
+  {
+   "type": "ii",
+   "nu": 7,
+   "mu": 3,
+   "s_eff": 11,
+   "branch": "punctured",
+   "n": 27,
+   "result": "unsat",
+   "dimV": 6,
+   "pairs": 3969
+  },
+  {
+   "type": "ii",
+   "nu": 8,
+   "mu": 3,
+   "s_eff": 12,
+   "branch": "plain",
+   "n": 28,
+   "result": "unsat",
+   "dimV": 7,
+   "pairs": 16129
+  },
+  {
+   "type": "ii",
+   "nu": 8,
+   "mu": 3,
+   "s_eff": 12,
+   "branch": "punctured",
+   "n": 27,
+   "result": "unsat",
+   "dimV": 6,
+   "pairs": 3969
+  },
+  {
+   "type": "i",
+   "nu": 4,
+   "mu": 4,
+   "s_eff": 8,
+   "branch": "plain",
+   "n": 30,
+   "result": "unsat",
+   "dimV": 9,
+   "pairs": 261121
+  },
+  {
+   "type": "i",
+   "nu": 4,
+   "mu": 4,
+   "s_eff": 8,
+   "branch": "punctured",
+   "n": 29,
+   "result": "unsat",
+   "dimV": 8,
+   "pairs": 65025
+  },
+  {
+   "type": "i",
+   "nu": 5,
+   "mu": 4,
+   "s_eff": 9,
+   "branch": "plain",
+   "n": 30,
+   "result": "unsat",
+   "dimV": 9,
+   "pairs": 261121
+  },
+  {
+   "type": "i",
+   "nu": 5,
+   "mu": 4,
+   "s_eff": 9,
+   "branch": "punctured",
+   "n": 29,
+   "result": "unsat",
+   "dimV": 8,
+   "pairs": 65025
+  },
+  {
+   "type": "i",
+   "nu": 6,
+   "mu": 4,
+   "s_eff": 10,
+   "branch": "plain",
+   "n": 30,
+   "result": "unsat",
+   "dimV": 9,
+   "pairs": 261121
+  },
+  {
+   "type": "i",
+   "nu": 6,
+   "mu": 4,
+   "s_eff": 10,
+   "branch": "punctured",
+   "n": 29,
+   "result": "unsat",
+   "dimV": 8,
+   "pairs": 65025
+  },
+  {
+   "type": "i",
+   "nu": 7,
+   "mu": 4,
+   "s_eff": 11,
+   "branch": "plain",
+   "n": 30,
+   "result": "unsat",
+   "dimV": 9,
+   "pairs": 261121
+  },
+  {
+   "type": "i",
+   "nu": 7,
+   "mu": 4,
+   "s_eff": 11,
+   "branch": "punctured",
+   "n": 29,
+   "result": "unsat",
+   "dimV": 8,
+   "pairs": 65025
+  },
+  {
+   "type": "i",
+   "nu": 8,
+   "mu": 4,
+   "s_eff": 12,
+   "branch": "plain",
+   "n": 30,
+   "result": "unsat",
+   "dimV": 9,
+   "pairs": 261121
+  },
+  {
+   "type": "i",
+   "nu": 8,
+   "mu": 4,
+   "s_eff": 12,
+   "branch": "punctured",
+   "n": 29,
+   "result": "unsat",
+   "dimV": 8,
+   "pairs": 65025
+  }
+ ]
+}

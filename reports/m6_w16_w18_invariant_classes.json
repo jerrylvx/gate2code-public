@@ -1,0 +1,30 @@
+{
+ "16": {
+  "class0": {
+   "size_in_seeds": 2604,
+   "rep": "65535"
+  },
+  "class1": {
+   "size_in_seeds": 784,
+   "rep": "252645360"
+  },
+  "class2": {
+   "size_in_seeds": 448,
+   "rep": "64427873641"
+  },
+  "class3": {
+   "size_in_seeds": 320,
+   "rep": "1095267189507"
+  },
+  "class4": {
+   "size_in_seeds": 64,
+   "rep": "1448498857"
+  }
+ },
+ "18": {
+  "class0": {
+   "size_in_seeds": 3136,
+   "rep": "72340173057036017"
+  }
+ }
+}

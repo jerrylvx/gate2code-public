@@ -1,0 +1,16 @@
+{
+ "units": 1984,
+ "hits": 21824,
+ "nonspan": 0,
+ "rank_unsat": 0,
+ "decided": 840384,
+ "non_unsat": [],
+ "deferred": [],
+ "all_unsat": true,
+ "n_reps": 124,
+ "targets": [
+  36,
+  38
+ ],
+ "claim": "(g8,h14) cells W in {36,38}: all supports decided unsat"
+}

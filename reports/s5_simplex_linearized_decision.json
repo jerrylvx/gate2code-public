@@ -1,0 +1,7 @@
+{
+  "result": "unsat",
+  "dimV": 15,
+  "pairs_checked": 49741825,
+  "instance": "s=5 n=31 simplex",
+  "seconds": 542.0
+}

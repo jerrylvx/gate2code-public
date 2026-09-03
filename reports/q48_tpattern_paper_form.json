@@ -1,0 +1,12 @@
+{
+  "source": "code_48_3_3_fg48.npz",
+  "columns_checked": 48,
+  "closed_form_matches_flip_vector": true,
+  "block_Tdag_counts": {
+    "10": 6,
+    "01": 6,
+    "11": 10
+  },
+  "n_Tdag": 22,
+  "n_T": 26
+}

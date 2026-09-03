@@ -1,0 +1,19 @@
+{
+ "task": 1,
+ "ntasks": 4,
+ "pairs": 569,
+ "dimV_hist": {
+  "8": 1329152,
+  "9": 1769728,
+  "10": 1101824,
+  "11": 29248
+ },
+ "real_decide_hist": {
+  "10": 1032192,
+  "11": 28672
+ },
+ "real_decides": 1060864,
+ "total_surviving": 4229952,
+ "est_decide_sec_1core": 1921024.0,
+ "wall_sec": 3132.6
+}

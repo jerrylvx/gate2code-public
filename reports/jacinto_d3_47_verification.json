@@ -1,0 +1,96 @@
+{
+ "source": "arXiv:2606.07734v1 Appendix D, Eq. (D3): 47T->1CCZ on N=9",
+ "shape": [
+  9,
+  47
+ ],
+ "rank_G": 9,
+ "rank_S": 6,
+ "ch_conditions_pass": true,
+ "dX": 16,
+ "dZ": 3,
+ "G_distinct_cols": 47,
+ "WE_S": {
+  "0": 1,
+  "16": 2,
+  "24": 60,
+  "32": 1
+ },
+ "native_no_correction": {
+  "found": false,
+  "status": "gf2_unsat"
+ },
+ "mod2_contradiction": {
+  "single_rows_1_based": [
+   3,
+   4,
+   8
+  ],
+  "pair_rows_1_based": [
+   [
+    1,
+    7
+   ],
+   [
+    1,
+    8
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    2,
+    5
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    6,
+    7
+   ]
+  ],
+  "single_weights": [
+   24,
+   24,
+   24
+  ],
+  "pair_overlap_weights": [
+   14,
+   14,
+   12,
+   12,
+   10,
+   8,
+   12,
+   12,
+   12,
+   12,
+   12
+  ],
+  "coefficient_xor_is_zero": true,
+  "right_hand_side_parity": 1
+ }
+}

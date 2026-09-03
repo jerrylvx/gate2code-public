@@ -1,0 +1,111 @@
+{
+ "claim": "Saved m=8 h-representative sets are complete Stab(g)-orbit covers of A8/A12 for the P_{4,2} floor sweep.",
+ "reps_path": "reports/m8_h_orbit_reps.json",
+ "sanity": {
+  "g8_weight": 8,
+  "g12_weight": 12,
+  "stab_g8_generators": 9,
+  "stab_g12_generators": 11,
+  "stab_g8_preserves_g8": true,
+  "stab_g12_preserves_g12": true
+ },
+ "materialize": {
+  "A8_count": 11160,
+  "A12_count": 1749888,
+  "seconds": 27.177
+ },
+ "reports": {
+  "h8_g8": {
+   "name": "h8_g8",
+   "n_reps": 20,
+   "target_count": 11160,
+   "sum_orbit_sizes": 11160,
+   "covered_count": 11160,
+   "overlap_count": 0,
+   "outside_target_count": 0,
+   "missing_count": 0,
+   "complete": true,
+   "orbit_size_hist": {
+    "1": 2,
+    "3": 2,
+    "28": 1,
+    "84": 7,
+    "168": 1,
+    "448": 2,
+    "1344": 4,
+    "4096": 1
+   },
+   "missing_sample": [],
+   "outside_sample": [],
+   "seconds": 0.275
+  },
+  "h12_g8": {
+   "name": "h12_g8",
+   "n_reps": 88,
+   "target_count": 1749888,
+   "sum_orbit_sizes": 1749888,
+   "covered_count": 1749888,
+   "overlap_count": 0,
+   "outside_target_count": 0,
+   "missing_count": 0,
+   "complete": true,
+   "orbit_size_hist": {
+    "336": 2,
+    "448": 2,
+    "1008": 10,
+    "1344": 10,
+    "2016": 4,
+    "2688": 6,
+    "5376": 16,
+    "8064": 10,
+    "10752": 6,
+    "16128": 4,
+    "21504": 1,
+    "28672": 1,
+    "64512": 7,
+    "86016": 7,
+    "129024": 1,
+    "172032": 1
+   },
+   "missing_sample": [],
+   "outside_sample": [],
+   "seconds": 42.809
+  },
+  "h12_g12": {
+   "name": "h12_g12",
+   "n_reps": 2167,
+   "target_count": 1749888,
+   "sum_orbit_sizes": 1749888,
+   "covered_count": 1749888,
+   "overlap_count": 0,
+   "outside_target_count": 0,
+   "missing_count": 0,
+   "complete": true,
+   "orbit_size_hist": {
+    "1": 2,
+    "6": 12,
+    "9": 14,
+    "12": 6,
+    "18": 52,
+    "36": 254,
+    "64": 1,
+    "72": 242,
+    "96": 16,
+    "144": 24,
+    "192": 6,
+    "288": 300,
+    "384": 8,
+    "576": 559,
+    "768": 2,
+    "1152": 407,
+    "2304": 162,
+    "4608": 100
+   },
+   "missing_sample": [],
+   "outside_sample": [],
+   "seconds": 52.744
+  }
+ },
+ "all_complete": true,
+ "seconds": 123.005
+}

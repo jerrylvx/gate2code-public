@@ -1,0 +1,330 @@
+{
+ "summary": {
+  "claim": "no k=3 d_Z>=3 CCZ code at s=5 (any n, any diagonal Clifford correction)",
+  "activities_checked": 63,
+  "verdict_summary": {
+   "n=15:unsat": 31,
+   "n=16:unsat": 31,
+   "n=31:unknown": 1
+  },
+  "all_unsat": false,
+  "seconds": 68.0
+ },
+ "verdicts": [
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 31,
+   "alpha": "unknown"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "E",
+   "n": 15,
+   "alpha": "unsat"
+  },
+  {
+   "branch": "P",
+   "n": 16,
+   "alpha": "unsat"
+  }
+ ]
+}

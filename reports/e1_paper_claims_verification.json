@@ -1,0 +1,207 @@
+{
+  "source": "code_48_3_3_fg48.npz",
+  "n_claims": 22,
+  "n_fail": 0,
+  "claims": [
+    {
+      "id": "A1-shape",
+      "desc": "G is 9x48",
+      "expected": [
+        9,
+        48
+      ],
+      "computed": [
+        9,
+        48
+      ],
+      "pass": true
+    },
+    {
+      "id": "A1-rankG",
+      "desc": "f2_rank(G) = 9 (k+s independent)",
+      "expected": 9,
+      "computed": 9,
+      "pass": true
+    },
+    {
+      "id": "A1-rankS",
+      "desc": "f2_rank(S) = 6 (s=6 stabilisers)",
+      "expected": 6,
+      "computed": 6,
+      "pass": true
+    },
+    {
+      "id": "A1-k",
+      "desc": "K independent mod S -> k=3",
+      "expected": 9,
+      "computed": 9,
+      "pass": true
+    },
+    {
+      "id": "A2-dist",
+      "desc": "(d_X, d_Z) = (16, 3) -> [[48,3,3]]",
+      "expected": [
+        16,
+        3
+      ],
+      "computed": [
+        16,
+        3
+      ],
+      "pass": true
+    },
+    {
+      "id": "A3-ch",
+      "desc": "verify_ch_conditions True (quasi-transversal CCZ)",
+      "expected": true,
+      "computed": true,
+      "pass": true
+    },
+    {
+      "id": "A4-ci",
+      "desc": "native-CSS C=I (no Clifford correction), brute-verified",
+      "expected": true,
+      "computed": true,
+      "pass": true
+    },
+    {
+      "id": "A5-Tpattern",
+      "desc": "Gamma sign vector = 26 T + 22 T-dagger",
+      "expected": [
+        26,
+        22
+      ],
+      "computed": [
+        26,
+        22
+      ],
+      "pass": true
+    },
+    {
+      "id": "A6-negctrl",
+      "desc": "hardcoded build_48_code() fails native C=I",
+      "expected": false,
+      "computed": false,
+      "pass": true,
+      "note": "build_48_code status=lift_unsat"
+    },
+    {
+      "id": "B1-proj",
+      "desc": "npz S is projective (distinct nonzero cols)",
+      "expected": true,
+      "computed": true,
+      "pass": true
+    },
+    {
+      "id": "B1-twoweight",
+      "desc": "WE(rowspan S) = {0:1, 24:60, 32:3}",
+      "expected": {
+        "0": 1,
+        "24": 60,
+        "32": 3
+      },
+      "computed": {
+        "0": 1,
+        "24": 60,
+        "32": 3
+      },
+      "pass": true
+    },
+    {
+      "id": "B1-rankS",
+      "desc": "f2_rank(S) = 6",
+      "expected": 6,
+      "computed": 6,
+      "pass": true
+    },
+    {
+      "id": "C1-poster-block",
+      "desc": "T @ S_poster[:,p] == S_FG48 (exact)",
+      "expected": true,
+      "computed": true,
+      "pass": true
+    },
+    {
+      "id": "C1-rowspace",
+      "desc": "rowspan(S_poster[:,p]) == rowspan(S_FG48)",
+      "expected": true,
+      "computed": true,
+      "pass": true
+    },
+    {
+      "id": "B2-npz-module",
+      "desc": "npz S (canonical order) spans same code as generator_fg48()",
+      "expected": true,
+      "computed": true,
+      "pass": true,
+      "note": "exact-equal only up to a 6x6 row-basis change (array_equal=False)"
+    },
+    {
+      "id": "C2-poster-eq-npz",
+      "desc": "poster and npz give the same canonical stabiliser code",
+      "expected": true,
+      "computed": true,
+      "pass": true
+    },
+    {
+      "id": "D1-S-weight",
+      "desc": "S_FG48 indicator weight = 48",
+      "expected": 48,
+      "computed": 48,
+      "pass": true
+    },
+    {
+      "id": "D1-S-degree",
+      "desc": "S_FG48 indicator ANF degree = 2",
+      "expected": 2,
+      "computed": 2,
+      "pass": true
+    },
+    {
+      "id": "D1-S-spectrum",
+      "desc": "S_FG48 degree spectrum = {1:2, 2:1}",
+      "expected": {
+        "1": 2,
+        "2": 1
+      },
+      "computed": {
+        "1": 2,
+        "2": 1
+      },
+      "pass": true
+    },
+    {
+      "id": "D2-G-weight",
+      "desc": "full [K;S_FG48] indicator weight = 48",
+      "expected": 48,
+      "computed": 48,
+      "pass": true
+    },
+    {
+      "id": "D2-G-degree",
+      "desc": "full [K;S_FG48] indicator ANF degree = 6",
+      "expected": 6,
+      "computed": 6,
+      "pass": true
+    },
+    {
+      "id": "D2-G-spectrum",
+      "desc": "full [K;S_FG48] spectrum = {2:2,3:16,4:40,5:35,6:1}",
+      "expected": {
+        "2": 2,
+        "3": 16,
+        "4": 40,
+        "5": 35,
+        "6": 1
+      },
+      "computed": {
+        "2": 2,
+        "3": 16,
+        "4": 40,
+        "5": 35,
+        "6": 1
+      },
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gate2code-reproducibility"
+version = "0.1.0"
+description = "Public computational companion for Native CCZ codes from projective geometry"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "galois>=0.4",
+    "numpy>=1.26",
+    "z3-solver>=4.12",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gate2code*"]

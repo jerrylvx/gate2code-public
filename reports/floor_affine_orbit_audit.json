@@ -1,0 +1,362 @@
+{
+ "claim": "Floor completeness ledger: RM-coset weight-spectrum coverage (s<=6, machine), KTA Table-I transcription fidelity, and reuse of the existing combinatorial orbit-closure certificates. Within-weight affine-class completeness at s=7/9 is the Kasami-Tokura/KTA classification theorem (cited).",
+ "N_core": 30,
+ "N_ext": 38,
+ "M1_spectrum_coverage_core": {
+  "n_max": 30,
+  "levels": {
+   "4": {
+    "admissible": [
+     15
+    ],
+    "dx_feasible": [
+     15
+    ],
+    "claimed": [
+     15
+    ],
+    "missing": [],
+    "claimed_not_admissible": [],
+    "covered": true
+   },
+   "5": {
+    "admissible": [
+     15,
+     16
+    ],
+    "dx_feasible": [
+     15,
+     16
+    ],
+    "claimed": [
+     15,
+     16
+    ],
+    "missing": [],
+    "claimed_not_admissible": [],
+    "covered": true
+   },
+   "6": {
+    "admissible": [
+     15,
+     16,
+     23,
+     24,
+     27,
+     28
+    ],
+    "dx_feasible": [
+     15,
+     16,
+     23,
+     24,
+     27,
+     28
+    ],
+    "claimed": [
+     15,
+     16,
+     23,
+     24,
+     27,
+     28
+    ],
+    "missing": [],
+    "claimed_not_admissible": [],
+    "covered": true
+   }
+  },
+  "all_covered": true
+ },
+ "M1_spectrum_coverage_ext": {
+  "n_max": 38,
+  "levels": {
+   "4": {
+    "admissible": [
+     15
+    ],
+    "dx_feasible": [
+     15
+    ],
+    "claimed": [
+     15
+    ],
+    "missing": [],
+    "claimed_not_admissible": [],
+    "covered": true
+   },
+   "5": {
+    "admissible": [
+     15,
+     16,
+     31
+    ],
+    "dx_feasible": [
+     15,
+     16,
+     31
+    ],
+    "claimed": [
+     15,
+     16,
+     31
+    ],
+    "missing": [],
+    "claimed_not_admissible": [],
+    "covered": true
+   },
+   "6": {
+    "admissible": [
+     15,
+     16,
+     23,
+     24,
+     27,
+     28,
+     31,
+     32,
+     35,
+     36
+    ],
+    "dx_feasible": [
+     15,
+     16,
+     23,
+     24,
+     27,
+     28,
+     31,
+     32,
+     35,
+     36
+    ],
+    "claimed": [
+     15,
+     16,
+     23,
+     24,
+     27,
+     28,
+     31,
+     32,
+     35,
+     36
+    ],
+    "missing": [],
+    "claimed_not_admissible": [],
+    "covered": true
+   }
+  },
+  "all_covered": true
+ },
+ "M2_kta_transcription": {
+  "rows": {
+   "11": {
+    "m": 9,
+    "declared_w": 32,
+    "actual_w": 32,
+    "degree": 5,
+    "ok": true
+   },
+   "15": {
+    "m": 9,
+    "declared_w": 38,
+    "actual_w": 38,
+    "degree": 5,
+    "ok": true
+   },
+   "19": {
+    "m": 10,
+    "declared_w": 38,
+    "actual_w": 38,
+    "degree": 6,
+    "ok": true
+   },
+   "20": {
+    "m": 9,
+    "declared_w": 36,
+    "actual_w": 36,
+    "degree": 5,
+    "ok": true
+   },
+   "21": {
+    "m": 9,
+    "declared_w": 38,
+    "actual_w": 38,
+    "degree": 5,
+    "ok": true
+   }
+  },
+  "all_ok": true
+ },
+ "M3_existing_orbit_certs": {
+  "m8_h_rep_cover": {
+   "present": true,
+   "all_complete": true,
+   "claim": "Saved m=8 h-representative sets are complete Stab(g)-orbit covers of A8/A12 for the P_{4,2} floor sweep."
+  },
+  "kta_puncture_orbits": {
+   "present": true,
+   "summary": {
+    "claim": "every puncture point of every KTA d=16 class decided",
+    "all_unsat": true,
+    "seconds": 472.3
+   }
+  },
+  "m7_w32_classes": {
+   "present": true,
+   "summary": {
+    "claim": "weight-32 affine classes at m=7 (KTA Cor 1 + Dickson quadratic)",
+    "cor1_abc": "all unsat, plain + all punctures (decided twice: 424/452/455s and 138s runs)",
+    "quad_h1": "support = 5-flat; completion system intrinsic to the flat (RM(2,7)|_flat = RM(2,5)); covered by the s=6 n=31/32 closure (reports/s6_window_3132_bucketed.json) - no separate decision needed",
+    "all_unsat": true
+   }
+  }
+ },
+ "ledger": [
+  {
+   "s": 4,
+   "claims_n": [
+    15
+   ],
+   "method": "flat obstruction (RM(1,4))",
+   "script": "activity_spectrum / lem:exp-flatobstruction",
+   "basis": "rm_spectrum_machine",
+   "status": "closed"
+  },
+  {
+   "s": 5,
+   "claims_n": [
+    15,
+    16,
+    31
+   ],
+   "method": "s<=5 exhaustion (Prop lb)",
+   "script": "alpha_linear last-label linearization",
+   "basis": "rm_spectrum_machine",
+   "status": "closed"
+  },
+  {
+   "s": 6,
+   "claims_n": [
+    15,
+    16
+   ],
+   "method": "certified small-weight scan",
+   "script": "ambient_m_class_decisions",
+   "basis": "rm_spectrum_machine",
+   "status": "closed"
+  },
+  {
+   "s": 6,
+   "claims_n": [
+    23,
+    24
+   ],
+   "method": "Dickson w24 class (E) + puncture (P, n=23)",
+   "script": "ambient_m_class_decisions + puncture",
+   "basis": "kt_kta_theorem_cited",
+   "status": "closed"
+  },
+  {
+   "s": 6,
+   "claims_n": [
+    27,
+    28
+   ],
+   "method": "Dickson w28 class (E) + puncture (P, n=27)",
+   "script": "ambient_m_class_decisions + puncture",
+   "basis": "kt_kta_theorem_cited",
+   "status": "closed"
+  },
+  {
+   "s": 6,
+   "claims_n": [
+    31,
+    32
+   ],
+   "method": "certified scan (n=31 simplex, n=32)",
+   "script": "ambient_m_class_decisions",
+   "basis": "rm_spectrum_machine",
+   "status": "closed"
+  },
+  {
+   "s": 6,
+   "claims_n": [
+    35,
+    36
+   ],
+   "method": "s=6 w36 elliptic-quadric class (E) + puncture (P, n=35)",
+   "script": "m6_w40 / elliptic class",
+   "basis": "kt_kta_theorem_cited",
+   "status": "closed"
+  },
+  {
+   "s": 7,
+   "claims_n": [
+    16,
+    24,
+    28
+   ],
+   "method": "sub-32 cubic weights (KT completeness)",
+   "script": "m7_cubic_class_scan",
+   "basis": "kt_kta_theorem_cited",
+   "status": "closed"
+  },
+  {
+   "s": 7,
+   "claims_n": [
+    31,
+    32
+   ],
+   "method": "w32 cubic classes (cor1_abc unsat; quad_h1 subsumed)",
+   "script": "m7_w32_classes",
+   "basis": "machine_orbit_cover",
+   "status": "closed"
+  },
+  {
+   "s": 7,
+   "claims_n": [
+    35,
+    36
+   ],
+   "method": "w36 cubic classes + all punctures",
+   "script": "m7_w36_decide_all (job 48301149)",
+   "basis": "kt_kta_theorem_cited",
+   "status": "closed"
+  },
+  {
+   "s": 8,
+   "claims_n": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+   ],
+   "method": "P_{4,2} g/h normal form, Stab(g)-orbit h-reps + punctures",
+   "script": "m8_hitshard (job 48300213)",
+   "basis": "machine_orbit_cover",
+   "status": "closed"
+  },
+  {
+   "s": 9,
+   "claims_n": [
+    31,
+    32,
+    35,
+    36,
+    37,
+    38
+   ],
+   "method": "KTA Table I (rows 11/15/19/20/21) + all puncture points",
+   "script": "kta_puncture_orbits",
+   "basis": "machine_orbit_cover",
+   "status": "closed"
+  }
+ ],
+ "pending_cells": [],
+ "machine_checks_pass": true
+}

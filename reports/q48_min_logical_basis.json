@@ -1,0 +1,709 @@
+{
+  "source": "code_48_3_3_fg48.npz",
+  "definition": {
+    "d_X": "min weight in rowspan(G) \\ rowspan(S)",
+    "logical_basis": "basis of the quotient rowspan(G)/rowspan(S)",
+    "minimum_weight_logical_basis": "lexicographically minimum row-weight basis among quotient representatives"
+  },
+  "ranks": {
+    "G": 9,
+    "S": 6
+  },
+  "distances": {
+    "d_X": 16,
+    "d_Z": 3
+  },
+  "coset_minima": [
+    {
+      "logical_label": "001",
+      "minimum_weight": 18,
+      "num_minimum_representatives": 8,
+      "minimum_shift_masks": [
+        "010000",
+        "010101",
+        "011011",
+        "011101",
+        "110010",
+        "110110",
+        "111000",
+        "111111"
+      ],
+      "example_word": "100010001101001001110100010010000110101000001100"
+    },
+    {
+      "logical_label": "010",
+      "minimum_weight": 16,
+      "num_minimum_representatives": 2,
+      "minimum_shift_masks": [
+        "111110",
+        "111111"
+      ],
+      "example_word": "000000000000000011001001011000111001110011001001"
+    },
+    {
+      "logical_label": "011",
+      "minimum_weight": 18,
+      "num_minimum_representatives": 16,
+      "minimum_shift_masks": [
+        "000001",
+        "000111",
+        "001000",
+        "001101",
+        "010011",
+        "010100",
+        "011001",
+        "011101",
+        "100011",
+        "100100",
+        "101011",
+        "101111",
+        "110010",
+        "110100",
+        "111001",
+        "111100"
+      ],
+      "example_word": "001011011000100000011000011100011010110001100000"
+    },
+    {
+      "logical_label": "100",
+      "minimum_weight": 16,
+      "num_minimum_representatives": 6,
+      "minimum_shift_masks": [
+        "000100",
+        "000111",
+        "001001",
+        "001011",
+        "101000",
+        "101001"
+      ],
+      "example_word": "010110101010010111110000000011110000000000000000"
+    },
+    {
+      "logical_label": "101",
+      "minimum_weight": 18,
+      "num_minimum_representatives": 8,
+      "minimum_shift_masks": [
+        "000011",
+        "000101",
+        "001010",
+        "001111",
+        "100011",
+        "100100",
+        "101011",
+        "101111"
+      ],
+      "example_word": "000111100100010001001000011101000101100111000000"
+    },
+    {
+      "logical_label": "110",
+      "minimum_weight": 16,
+      "num_minimum_representatives": 2,
+      "minimum_shift_masks": [
+        "010110",
+        "010111"
+      ],
+      "example_word": "000000000000000001100011110010011100011001101100"
+    },
+    {
+      "logical_label": "111",
+      "minimum_weight": 18,
+      "num_minimum_representatives": 16,
+      "minimum_shift_masks": [
+        "000011",
+        "000110",
+        "001010",
+        "001100",
+        "010000",
+        "010100",
+        "011010",
+        "011101",
+        "100000",
+        "100100",
+        "101000",
+        "101111",
+        "110000",
+        "110101",
+        "111011",
+        "111101"
+      ],
+      "example_word": "100010000010110111101000100000010101001101100000"
+    }
+  ],
+  "weight_16_logical_labels": [
+    "010",
+    "100",
+    "110"
+  ],
+  "weight_16_label_rank": 2,
+  "minimum_quotient_basis": [
+    {
+      "logical_label": "010",
+      "minimum_weight": 16,
+      "num_minimum_representatives": 2,
+      "minimum_shift_masks": [
+        "111110",
+        "111111"
+      ],
+      "example_word": "000000000000000011001001011000111001110011001001"
+    },
+    {
+      "logical_label": "100",
+      "minimum_weight": 16,
+      "num_minimum_representatives": 6,
+      "minimum_shift_masks": [
+        "000100",
+        "000111",
+        "001001",
+        "001011",
+        "101000",
+        "101001"
+      ],
+      "example_word": "010110101010010111110000000011110000000000000000"
+    },
+    {
+      "logical_label": "001",
+      "minimum_weight": 18,
+      "num_minimum_representatives": 8,
+      "minimum_shift_masks": [
+        "010000",
+        "010101",
+        "011011",
+        "011101",
+        "110010",
+        "110110",
+        "111000",
+        "111111"
+      ],
+      "example_word": "100010001101001001110100010010000110101000001100"
+    }
+  ],
+  "minimum_quotient_basis_matrix": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0
+    ]
+  ],
+  "z_logical_witness": {
+    "column_indices_1_based": [
+      1,
+      17,
+      33
+    ],
+    "block_coordinates": [
+      "(0,(1,0))",
+      "(0,(0,1))",
+      "(0,(1,1))"
+    ],
+    "logical_labels": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "stabilizer_syndrome": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "logical_syndrome": [
+      1,
+      0,
+      1
+    ],
+    "weight": 3
+  },
+  "comparison": [
+    {
+      "name": "original K",
+      "row_weights": [
+        24,
+        20,
+        30
+      ],
+      "label_histogram": {
+        "000": 5,
+        "001": 11,
+        "010": 3,
+        "011": 5,
+        "100": 5,
+        "101": 7,
+        "110": 5,
+        "111": 7
+      },
+      "fiber_geometry_summary": {
+        "total_projective_lines_inside_fibers": 3,
+        "cap_fibers": 6,
+        "projective_flat_fibers": 0,
+        "rank_sum": 41
+      },
+      "fibers": [
+        {
+          "label": "000",
+          "size": 5,
+          "rank": 5,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "001",
+          "size": 11,
+          "rank": 6,
+          "projective_line_count": 2,
+          "projective_cap": false,
+          "projective_flat": false
+        },
+        {
+          "label": "010",
+          "size": 3,
+          "rank": 3,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "011",
+          "size": 5,
+          "rank": 5,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "100",
+          "size": 5,
+          "rank": 5,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "101",
+          "size": 7,
+          "rank": 6,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "110",
+          "size": 5,
+          "rank": 5,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "111",
+          "size": 7,
+          "rank": 6,
+          "projective_line_count": 1,
+          "projective_cap": false,
+          "projective_flat": false
+        }
+      ],
+      "rank_G": 9,
+      "distances": {
+        "d_X": 16,
+        "d_Z": 3
+      },
+      "CH": true,
+      "native": {
+        "found": true,
+        "status": "ok",
+        "verified": true,
+        "n_T": 26,
+        "n_Tdag": 22
+      }
+    },
+    {
+      "name": "cap-normal K",
+      "row_weights": [
+        24,
+        24,
+        26
+      ],
+      "label_histogram": {
+        "000": 5,
+        "001": 7,
+        "010": 7,
+        "011": 5,
+        "100": 5,
+        "101": 7,
+        "110": 5,
+        "111": 7
+      },
+      "fiber_geometry_summary": {
+        "total_projective_lines_inside_fibers": 0,
+        "cap_fibers": 8,
+        "projective_flat_fibers": 0,
+        "rank_sum": 40
+      },
+      "fibers": [
+        {
+          "label": "000",
+          "size": 5,
+          "rank": 4,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "001",
+          "size": 7,
+          "rank": 6,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "010",
+          "size": 7,
+          "rank": 6,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "011",
+          "size": 5,
+          "rank": 4,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "100",
+          "size": 5,
+          "rank": 4,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "101",
+          "size": 7,
+          "rank": 6,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "110",
+          "size": 5,
+          "rank": 4,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "111",
+          "size": 7,
+          "rank": 6,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        }
+      ],
+      "rank_G": 9,
+      "distances": {
+        "d_X": 16,
+        "d_Z": 3
+      },
+      "CH": true,
+      "native": {
+        "found": true,
+        "status": "ok",
+        "verified": true,
+        "n_T": 26,
+        "n_Tdag": 22
+      }
+    },
+    {
+      "name": "minimum-weight quotient basis",
+      "row_weights": [
+        16,
+        16,
+        18
+      ],
+      "label_histogram": {
+        "000": 11,
+        "001": 9,
+        "010": 7,
+        "011": 5,
+        "100": 9,
+        "101": 3,
+        "110": 3,
+        "111": 1
+      },
+      "fiber_geometry_summary": {
+        "total_projective_lines_inside_fibers": 4,
+        "cap_fibers": 7,
+        "projective_flat_fibers": 1,
+        "rank_sum": 35
+      },
+      "fibers": [
+        {
+          "label": "000",
+          "size": 11,
+          "rank": 6,
+          "projective_line_count": 4,
+          "projective_cap": false,
+          "projective_flat": false
+        },
+        {
+          "label": "001",
+          "size": 9,
+          "rank": 6,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "010",
+          "size": 7,
+          "rank": 5,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "011",
+          "size": 5,
+          "rank": 5,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "100",
+          "size": 9,
+          "rank": 6,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "101",
+          "size": 3,
+          "rank": 3,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "110",
+          "size": 3,
+          "rank": 3,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": false
+        },
+        {
+          "label": "111",
+          "size": 1,
+          "rank": 1,
+          "projective_line_count": 0,
+          "projective_cap": true,
+          "projective_flat": true
+        }
+      ],
+      "rank_G": 9,
+      "distances": {
+        "d_X": 16,
+        "d_Z": 3
+      },
+      "CH": true,
+      "native": {
+        "found": true,
+        "status": "ok",
+        "verified": true,
+        "n_T": 26,
+        "n_Tdag": 22
+      }
+    }
+  ],
+  "cap_normal_certificate": {
+    "rank_G": 9,
+    "rank_S": 6,
+    "d_X": 16,
+    "d_Z": 3,
+    "CH": true,
+    "native_C_eq_I": true,
+    "T_pattern": {
+      "n_T": 26,
+      "n_Tdag": 22
+    },
+    "full_G_indicator": {
+      "weight": 48,
+      "degree": 6,
+      "spectrum": {
+        "4": 52,
+        "5": 40,
+        "2": 2,
+        "3": 19,
+        "6": 1
+      }
+    }
+  }
+}

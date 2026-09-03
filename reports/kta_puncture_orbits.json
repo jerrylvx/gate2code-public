@@ -1,0 +1,44 @@
+{
+ "summary": {
+  "claim": "every puncture point of every KTA d=16 class decided",
+  "all_unsat": true,
+  "seconds": 472.3
+ },
+ "rows": [
+  {
+   "row": "11",
+   "s_eff": 9,
+   "w": 32,
+   "punctures": 32,
+   "non_unsat": []
+  },
+  {
+   "row": "15",
+   "s_eff": 9,
+   "w": 38,
+   "punctures": 38,
+   "non_unsat": []
+  },
+  {
+   "row": "19",
+   "s_eff": 10,
+   "w": 38,
+   "punctures": 38,
+   "non_unsat": []
+  },
+  {
+   "row": "20",
+   "s_eff": 9,
+   "w": 36,
+   "punctures": 36,
+   "non_unsat": []
+  },
+  {
+   "row": "21",
+   "s_eff": 9,
+   "w": 38,
+   "punctures": 38,
+   "non_unsat": []
+  }
+ ]
+}
