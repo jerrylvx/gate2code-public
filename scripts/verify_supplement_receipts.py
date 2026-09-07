@@ -26,6 +26,19 @@ def main() -> None:
     assert simplex["result"] == "unsat"
     assert simplex["pairs_checked"] == 49_741_825
 
+    weight32 = load("s6_weight32_exact.json")
+    assert weight32["affine_classes"] == 3
+    assert weight32["origin_positions_verified"] == 192
+    assert weight32["unpunctured_tests"] == weight32["punctured_tests"] == 2
+    assert weight32["sampling"] is False and weight32["all_unsat_or_reduced"]
+    assert [row["quadratic_rank"] for row in weight32["classes"]] == [0, 2, 4]
+    for row in weight32["classes"]:
+        assert len(row["origin_transports"]) == 64
+        assert all(t["label_space_verified"] for t in row["origin_transports"])
+    assert [[t["pairs_checked"] for t in row["tests"]]
+            for row in weight32["classes"]] == [[], [12_042_241, 3_006_465], [2_224_129, 555_009]]
+    assert all(t["result"] == "unsat" for row in weight32["classes"] for t in row["tests"])
+
     cover = load("m8_h_rep_completeness_audit.json")
     assert cover["all_complete"] is True
     expected_cover = {
@@ -70,6 +83,9 @@ def main() -> None:
     assert k3_rejections == 13_274_528
 
     result = {
+        "rank6_weight32": {"affine_classes": 3, "analytic_reductions": 1,
+                           "exact_label_tests": 4, "origin_positions_verified": 192,
+                           "result": "all excluded"},
         "s5": {
             "activities": 63,
             "simplex_pairs": 49_741_825,

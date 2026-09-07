@@ -1,4 +1,11 @@
 {
+  "rank6_weight32": {
+    "affine_classes": 3,
+    "analytic_reductions": 1,
+    "exact_label_tests": 4,
+    "origin_positions_verified": 192,
+    "result": "all excluded"
+  },
   "s5": {
     "activities": 63,
     "simplex_pairs": 49741825,

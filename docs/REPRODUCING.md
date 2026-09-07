@@ -35,6 +35,7 @@ with the stored flip vector. The second evaluates the native congruence on every
 | Initial lower-bound reductions and candidate weights | `scripts/kt_floor_theorem.py` | `reports/kt_floor_theorem.json` | the stated candidate list and reductions | seconds |
 | Rank-five closure | `scripts/close_s5_corrected.py` and `scripts/simplex_s5_via_library.py` | `reports/s5_corrected_closure.json` and `reports/s5_simplex_linearized_decision.json` | 62 non-simplex activities rejected and all 49,741,825 simplex pairs rejected | about 1 minute for the non-simplex cases and 9 minutes for the vectorized simplex check |
 | Rank-six and rank-seven coverage | `scripts/audit_floor_affine_orbits.py` and `scripts/m7_w32_classes.py` | `reports/floor_affine_orbit_audit.json` and `reports/m7_w32_classes.json` | the coverage ledger is complete and no tested rank-seven label map survives | minutes |
+| Rank-six weight-32 case | `scripts/verify_s6_weight32.py` | `reports/s6_weight32_exact.json` | three affine classes: one analytic rank-five reduction and four exhaustive unpunctured/punctured tests, all unsatisfiable; every origin transport verified | about 20 seconds with compilation enabled |
 | Rank-eight orbit coverage | `scripts/m8_h_rep_completeness_audit.py` | `reports/m8_h_rep_completeness_audit.json` | every listed orbit is disjoint, contained in its class, and complete | about 30 seconds with compilation enabled, or about 2 minutes with JIT disabled |
 | Rank-eight label-map systems | `scripts/m8_floor_manifest.py` | `reports/m8_floor_manifest.task0.json` through `task3.json` | 16,798,112 base systems, with 3,523,584 full third-label solves, all inconsistent | 12,868.9 recorded task-seconds in total |
 | Separate weight-14 cases | `scripts/m8_h14_sweep.py` | `reports/m8_h14_sweep_final.json` | 124 representatives and 840,384 decided systems, with no missing, deferred, or surviving case | cluster-scale sweep, timing not retained in the final summary |
@@ -44,6 +45,13 @@ with the stored flip vector. The second evaluates the native congruence on every
 The four rank-eight task summaries and the weight-14 JSONL file are the retained machine-readable
 search outputs. The compact JSON files record the aggregate checks used in the paper and supplement.
 The heavy sweeps are not part of a routine local test run.
+
+For the rank-six weight-32 case, use the new exact receipt rather than the historical
+coverage summary or sampled invariant buckets. The script prints its full JSON receipt.
+The two quadratic classes test respectively 12,042,241 and 2,224,129 unpunctured pairs,
+and 3,006,465 and 555,009 punctured pairs. Explicit linear maps cover all 32 punctures
+within each class; no additional punctured label solve is needed. Supplementary Note C
+gives the affine-hyperplane reduction and the coordinate-change argument.
 
 ## Other independent checks
 
