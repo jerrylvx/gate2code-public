@@ -1,0 +1,8 @@
+# Tested quick-check environment; Python 3.11.
+# These constraints do not change the package's declared compatibility range.
+numpy==2.2.6
+galois==0.4.6
+numba==0.61.2
+llvmlite==0.44.0
+z3-solver==4.16.0.0
+typing_extensions==4.15.0

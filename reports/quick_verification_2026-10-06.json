@@ -1,0 +1,52 @@
+{
+  "scope": "Stored-code distances, physical signs, signed weights, comparison code, and family witnesses",
+  "source_sha256": "5d65087b239212e311076da1a0aab18cb46f976f0b00e27e4e3b7ab84e3bc861",
+  "python": "3.11.8",
+  "platform": "macOS-15.8-arm64-arm-64bit",
+  "dependencies": {
+    "numpy": "2.2.6",
+    "galois": "0.4.6",
+    "numba": "0.61.2",
+    "llvmlite": "0.44.0",
+    "z3-solver": "4.16.0.0",
+    "typing_extensions": "4.15.0"
+  },
+  "checks": [
+    {
+      "name": "47-qubit comparison code",
+      "program": "verify_jacinto_d3.py",
+      "exit_code": 0,
+      "seconds": 3.575
+    },
+    {
+      "name": "48-qubit distances and logical witness",
+      "program": "q48_min_logical_basis.py",
+      "exit_code": 0,
+      "seconds": 1.333
+    },
+    {
+      "name": "physical-sign formula",
+      "program": "verify_tpattern_paper_form.py",
+      "exit_code": 0,
+      "seconds": 0.393
+    },
+    {
+      "name": "signed-weight conditions",
+      "program": "verify_native_ladder.py",
+      "exit_code": 0,
+      "seconds": 0.273
+    },
+    {
+      "name": "family witnesses and printed table",
+      "program": "verify_family_table.py",
+      "exit_code": 0,
+      "seconds": 3.697
+    }
+  ],
+  "not_rerun": [
+    "exhaustive length-48 classification",
+    "large lower-bound sweeps",
+    "SAT search"
+  ],
+  "all_passed": true
+}

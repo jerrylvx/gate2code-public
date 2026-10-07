@@ -3,6 +3,7 @@ __pycache__/
 .venv/
 .DS_Store
 *.egg-info/
+.quick-check/
 
 # Classification intermediates are regenerated locally.
 *.pkl

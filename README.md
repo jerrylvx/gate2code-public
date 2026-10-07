@@ -3,8 +3,46 @@
 Public reproducibility package for the paper by Bohan Lu and Kenneth R. Brown.
 
 This README contains the reproduction instructions, computational coverage arguments,
-and classification details supporting the paper. No standalone supplementary PDF is
-required. Equation, table, algorithm, and appendix numbers refer to the paper.
+and classification details supporting the paper. Equation, table, algorithm, and
+appendix numbers refer to the paper.
+
+## Quick start
+
+The quick checks were tested with Python 3.11.8 and the dependency versions in
+[requirements-quick.txt](requirements-quick.txt): NumPy 2.2.6, galois 0.4.6,
+Numba 0.61.2, llvmlite 0.44.0, z3-solver 4.16.0.0, and typing_extensions 4.15.0.
+From a fresh clone of this repository:
+
+```bash
+python3.11 -m venv .venv
+source .venv/bin/activate
+python -m pip install -c requirements-quick.txt -e .
+python -m pip check
+python scripts/verify_quick.py --report .quick-check/verification.json
+```
+
+Expected final output:
+
+```text
+All five quick verification programs and report checks passed. Archived reports unchanged.
+```
+
+The runner checks the 47-qubit comparison code, the distances and a logical
+witness of the 48-qubit code, its physical-sign formula and signed-weight
+conditions, and all 138 family witnesses against Table 3. Existing programs run
+in a temporary copy, so the archived reports stay unchanged. The fresh receipt
+records the program and data digest, interpreter, dependencies, and check results.
+Run without Python's `-O` option: the existing verification programs use assertions.
+
+The [automated quick checks](https://github.com/jerrylvx/gate2code-public/actions/workflows/quick-verification.yml)
+use the same dependency constraints on Ubuntu with Python 3.11. Passing quick
+checks does not establish exhaustive search coverage. The full length-48
+classification, large lower-bound sweeps, and SAT search remain separate manual
+workflows documented below.
+
+The latest local quick-check results and their limits are documented in
+[Quick verification](docs/QUICK_VERIFICATION.md). Archived outputs elsewhere in
+the repository retain their original scope.
 
 ## Terminology and notation
 
@@ -50,7 +88,9 @@ pip install -e '.[classification]'
 pip install -e '.[sat]'
 ```
 
-Each verification program exits with a nonzero status if an assertion fails.
+The quick-check runner also validates reported ranks, distances and exclusion
+results that individual programs print without asserting. Any failed assertion,
+unexpected report value, or nonzero program exit makes the runner fail.
 Some longer searches use Numba. If its cache is unavailable, set
 `NUMBA_DISABLE_JIT=1`; this changes performance, not the exact arithmetic.
 
@@ -128,7 +168,7 @@ of equation (35). The pair counts below refer to ordered pairs
 $`(\kappa_1,\kappa_2)`$ of nonzero logical rows in $`V_{\mathcal P}`$ satisfying
 K2 and KS2. Each linear system for $`\kappa_3`$ is solved over $`\mathbb F_2`$.
 
-At $`s=6`$ and $`|c|=32`$, Appendix D.6, Step 2 excludes the degree-one class
+At $`s=6`$ and $`|c|=32`$, Appendix D.4, Step 2 excludes the degree-one class
 analytically. The two remaining classes have $`c=y_6+q`$:
 
 | $`q`$ | $`\dim V_{\mathcal P}`$ | Unpunctured pairs tested |
@@ -208,8 +248,10 @@ n=48: 4152 classes, 17 with a single-qubit transversal pattern, 2 such codes C1,
 ```
 
 The family check takes seconds. The full classification is a longer computation;
-its running time depends on the environment. The checks performed for this
-release are recorded in [reports/release_verification.json](reports/release_verification.json).
+its running time depends on the environment. Earlier checks are recorded in
+[reports/release_verification.json](reports/release_verification.json), a historical
+receipt for the source snapshot named in that file. A new quick-check receipt
+does not replace that record or rerun the full classification.
 The large lower-bound sweeps use the separately retained outputs listed above.
 
 ### What is verified for each family code
@@ -341,6 +383,18 @@ FG48 coordinates. The stored SAT output and timing record are
 [reports/cms_s6_n48.json](reports/cms_s6_n48.json) and
 [reports/timing/cms_s6_n48_timing.json](reports/timing/cms_s6_n48_timing.json).
 The cluster search itself is not a quick local check.
+
+## Citation
+
+Please cite the paper when using the constructions or results:
+
+```text
+Bohan Lu and Kenneth R. Brown.
+Building codes with transversal CCZ using projective geometry and SAT solvers.
+2026.
+```
+
+The permanent arXiv link will be added after the article is publicly announced.
 
 ## License
 
