@@ -1,32 +1,30 @@
-"""Native-CSS identity-correction (C=I / no-correction) primitives.
+"""Single-qubit transversal T/T-dagger implementations of logical CCZ.
 
-A CSS CCZ code with G = [K; S] (k=3 logical rows, s stabiliser rows) admits a
-**native-CSS identity correction** ("C=I" / no-correction) iff there is a T/T†
-pattern Γ ∈ {T, T†}^n such that transversal T_Γ implements *pure* logical CCZ
-with no diagonal-Clifford correction, i.e.
+For a full-rank CSS generator G = [K; S] with three logical rows, Definition 3.4
+requires physical signs Gamma in {+1,-1}^n such that
 
-    sw(v·G; Γ) ≡ 4·x₁x₂x₃ (mod 8)   for all v = (x, y) ∈ F₂^{k+s}.
+    sw_Gamma(K^T x + S^T y) = 4 x1 x2 x3 (mod 8) for every x,y.
 
-Encoding Γ by δ ∈ {0,1}^n (Γ_j = 1 - 2δ_j, so δ_j=1 ↔ T†), this factors by the
-Bravyi–Haah degree decomposition into:
+The paper's binary flip vector gamma specifies Gamma_j = (-1)^gamma_j.
+The implementation calls that binary vector delta. For each row G_i and each
+pair of distinct rows G_i,G_j, the signed-weight condition requires
 
-    (cond3 / C_ijk)  |G_i ∧ G_j ∧ G_k| ≡ [ (i,j,k)=(0,1,2) ]   mod 2   (code-level)
-    (cond4 / L_i)    δ · G_i           ≡ |G_i| / 2              mod 4
-    (cond5 / Q_ij)   δ · (G_i ∧ G_j)   ≡ |G_i ∧ G_j| / 2        mod 2
+    delta . G_i           = |G_i| / 2           (mod 4),
+    delta . (G_i & G_j)   = |G_i & G_j| / 2     (mod 2),
 
-This is rainbow Lemma 12 = CSS-T(mixed) = "δ_Γ ≡ 0" (verified in
-docs/IDENTITY_CORRECTION_CLIFFORD_DEFORMATION.md §8, verify_cssT_rainbow_coincidence.py).
-It is **strictly stronger** than CH-canonical (= F-QT *with* a diagonal Clifford
-correction, gate2code.ccz.verify_ch_conditions): no-correction forces both the
-linear (S/λ) and quadratic (CZ/b) correction budgets to zero, jointly on one Γ.
+along with the triple-overlap parity conditions. The nine Campbell-Howard (CH)
+conditions alone allow a quasi-transversal implementation with a diagonal
+Clifford correction and do not imply a single-qubit transversal implementation.
 
-Public API
-----------
-- ``no_correction(G, k=3)``        → NoCorrResult (the C=I decision; exhaustive)
-- ``verify_no_correction(G, γ)``   → bool (brute δ_Γ≡0 over all 2^r states)
-- ``accepts(G, level, k=3)``       → bool (toggleable constraint level)
-- ``deformation_cost(G, k=3)``     → DeformationCost (non-CSS C=I reachability)
-- ``CH_CANONICAL`` | ``NO_CORRECTION`` | ``Z8_KERNEL``  (constraint levels)
+Existing API identifiers are retained. NoCorrResult.delta is the binary flip
+vector gamma of the paper. NoCorrResult.gamma stores exponents 1 (T) and
+7 (T-dagger), which equal the physical signs Gamma modulo 8.
+
+Public API:
+- no_correction(G, k=3): solve for a single-qubit transversal pattern.
+- verify_no_correction(G, gamma): check the signed-weight equation on all codewords.
+- accepts(G, level, k=3): test the selected implementation constraints.
+- deformation_cost(G, k=3): compute diagonal-Clifford deformation data.
 """
 from __future__ import annotations
 
@@ -37,8 +35,8 @@ from typing import List, Optional, Tuple, Union
 import numpy as np
 
 # Constraint levels (shared toggle across search drivers)
-CH_CANONICAL = "ch_canonical"     # F-QT with diagonal Clifford correction (old default)
-NO_CORRECTION = "no_correction"   # native-CSS C=I (rainbow Lemma 12 / CSS-T mixed)
+CH_CANONICAL = "ch_canonical"     # quasi-transversal CCZ with a diagonal Clifford correction
+NO_CORRECTION = "no_correction"   # single-qubit transversal T/T-dagger implementation
 Z8_KERNEL = "z8_kernel"           # CCZ via any Γ∈Z₈ (with-correction, permissive)
 
 
@@ -187,9 +185,13 @@ def _lift_enumerate(x0, basis, G, targets):
 
 
 def search_identity_fast(G: np.ndarray):
-    """Exhaustive C=I solver. Returns (delta, gamma) if a no-correction Γ exists,
+    """Search for a single-qubit transversal pattern; return (delta, gamma) if found,
     else a status string in {cubic_fail, parity_fail_L, parity_fail_Q, gf2_unsat,
-    lift_unsat, lift_unsat_sampled}.  Γ ∈ {1,7}^n (1=T, 7=T†)."""
+    lift_unsat, lift_unsat_sampled}. Here delta is the binary flip vector and
+    gamma contains exponents in {1,7} (1=T, 7=T-dagger). The mod-4 search is
+    exhaustive for kernel dimension at most 28. Above that dimension, a bounded
+    random sample is used; lift_unsat_sampled leaves existence unresolved.
+    """
     r, n = G.shape
 
     # cond3 (cubic, Γ-free): K-triple → 1, every other triple → 0
@@ -248,22 +250,25 @@ def search_identity_fast(G: np.ndarray):
 # ---------------------------------------------------------------------------
 @dataclass
 class NoCorrResult:
-    """Result of the native-CSS C=I (no-correction) decision."""
+    """Result of the single-qubit transversal implementation check."""
     found: bool
     status: str                       # 'ok' or the failing-stage tag
     gamma: Optional[np.ndarray]       # shape (n,), entries in {1,7} (1=T, 7=T†)
-    delta: Optional[np.ndarray]       # shape (n,), binary; gamma = 1 - 6*... (1↔0, 7↔1)
+    delta: Optional[np.ndarray]       # shape (n,), binary; gamma = 1 + 6*delta (0->1, 1->7)
     n_T: int
     n_Tdag: int
 
 
 def no_correction(G: np.ndarray, k: int = 3) -> NoCorrResult:
-    """Decide whether G admits a native-CSS identity correction (C=I).
+    """Decide whether G admits a single-qubit transversal T/T-dagger implementation.
 
-    Exhaustive over Γ ∈ {T,T†}^n via GF(2) RREF + mod-4 lift — a proof, not a
-    sample.  ``found=False`` with status 'gf2_unsat'/'lift_unsat' means *no* Γ
-    yields native-CSS C=I for this fixed CSS code (a non-CSS Clifford
-    deformation always exists; see ``deformation_cost``)."""
+    The search checks triple-overlap parities, solves a binary linear system,
+    and tests the mod-4 conditions. A gf2_unsat or lift_unsat status excludes a
+    pattern for the supplied generator matrix. Kernel dimensions above 28 use
+    bounded sampling: lift_unsat_sampled leaves existence unresolved.
+    Returned gamma entries are
+    exponents in {1,7}; returned delta entries are the paper's binary flip vector.
+    """
     if k != 3:
         raise ValueError("C=I condition is defined for k=3 (CCZ).")
     G = np.asarray(G, dtype=int) % 2
@@ -276,7 +281,11 @@ def no_correction(G: np.ndarray, k: int = 3) -> NoCorrResult:
 
 
 def verify_no_correction(G: np.ndarray, gamma: np.ndarray, k: int = 3) -> bool:
-    """Brute-force verify sw(v·G; γ) ≡ 4·x₁x₂x₃ (mod 8) over all 2^{k+s} states."""
+    """Check the signed-weight equation on all 2^{k+s} codewords.
+
+    The argument gamma contains exponents 1 (T) and 7 (T-dagger).
+    The paper's physical signs are Gamma = +1 and -1, respectively.
+    """
     G = np.asarray(G, dtype=int) % 2
     m, n = G.shape
     sign = np.where(np.asarray(gamma) == 7, -1, 1).astype(int)
@@ -293,11 +302,11 @@ def verify_no_correction(G: np.ndarray, gamma: np.ndarray, k: int = 3) -> bool:
 
 
 def accepts(G: np.ndarray, level: str = CH_CANONICAL, k: int = 3) -> bool:
-    """Toggleable constraint check.
+    """Check the selected implementation constraints.
 
-    CH_CANONICAL  — F-QT with diagonal Clifford correction (gate2code.ccz).
-    NO_CORRECTION — CH_CANONICAL ∧ native-CSS C=I (this module).
-    Z8_KERNEL     — CCZ achievable with some Γ∈Z₈ (gate2code.z8_kernel).
+    CH_CANONICAL: the nine CH conditions for quasi-transversal CCZ.
+    NO_CORRECTION: the CH conditions and a single-qubit transversal pattern.
+    Z8_KERNEL: a CCZ implementation with physical exponents in Z_8.
     """
     from gate2code.ccz import verify_ch_conditions
     G = np.asarray(G, dtype=int) % 2
@@ -317,8 +326,8 @@ def accepts(G: np.ndarray, level: str = CH_CANONICAL, k: int = 3) -> bool:
 # ---------------------------------------------------------------------------
 @dataclass
 class DeformationCost:
-    """Cost of reaching C=I, natively (CSS) or via a non-CSS Clifford deformation."""
-    native_CI: bool          # native-CSS C=I (no deformation needed)?
+    """Diagonal-Clifford deformation data and single-qubit transversal status."""
+    native_CI: bool          # single-qubit transversal implementation exists?
     n_S: int                 # S-gates in the diagonal Clifford D
     n_CZ: int                # CZ-gates in D
     err_count: int           # find_correction residual (0 = valid diagonal Clifford)
@@ -328,12 +337,12 @@ class DeformationCost:
 
 
 def deformation_cost(G: np.ndarray, k: int = 3) -> DeformationCost:
-    """Report native-CSS C=I and the non-CSS Clifford-deformation cost for G.
+    """Report single-qubit transversal status and diagonal-Clifford deformation data.
 
-    Reuses the existing correction chain (gate2code.correction): find a logical
-    Γ, extract the residual diagonal Clifford D (S+CZ), expand to physical gates,
-    and conjugate the X-checks by A (S-diagonal + CZ-adjacency).  C' = D·C is CSS
-    iff no X-check picks up a Z-part."""
+    The correction calculation extracts a diagonal Clifford D (S and CZ gates),
+    expands D to physical gates, and conjugates the X-stabilizers. The returned
+    css_survives flag tests whether any X-stabilizer acquires a Z component.
+    """
     from gate2code.correction import (find_gamma, find_correction,
                                        dual_basis, physical_diagonal_clifford)
     G = np.asarray(G, dtype=int) % 2
@@ -342,7 +351,7 @@ def deformation_cost(G: np.ndarray, k: int = 3) -> DeformationCost:
     native = nc.found
 
     # Prefer the no-correction Γ when it exists: then the deformation is trivial
-    # (0 S, 0 CZ, stays CSS), the honest "cost" for a native-CSS C=I code.
+    # (0 S, 0 CZ, stays CSS), the deformation cost for a single-qubit transversal implementation.
     if native:
         sigma = np.where(nc.gamma == 7, -1, 1).astype(int)
     else:

@@ -3,7 +3,7 @@
   "codewords_checked": 512,
   "checks": [
     {
-      "name": "stored Q48 admits a native T/T-dagger pattern",
+      "name": "stored Q48 admits a single-qubit transversal T/T-dagger pattern",
       "passed": true,
       "detail": "26 T + 22 T-dagger"
     },
@@ -20,7 +20,7 @@
     {
       "name": "the ladder reduces mod 2 to S1-S3",
       "passed": true,
-      "detail": "S1-S3 are the mod-2 shadow"
+      "detail": "S1-S3 are the reductions mod 2"
     },
     {
       "name": "eq:exp-CI: sw_Gamma(c) == 4 x1x2x3 (mod 8)",

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Independently re-verify every load-bearing claim of the expedited Gates paper.
+"""Independently re-verify the archived 48-qubit code and its projective geometry.
 
 Loads the stored Q48 representative and re-derives, from scratch, the
-chain .npz -> [[48,3,3]] native C=I certificate -> FG48 projective two-weight
+chain .npz -> [[48,3,3]] single-qubit transversal T/T-dagger pattern -> FG48 projective two-weight
 spine -> poster->block certificate -> full-G decoration ANF.  Each claim is
 recomputed with the existing verified modules (gate2code.{ccz,identity,fg48,
 ks_fiber,decreasing_monomial}) and compared against the value documented in the
@@ -80,14 +80,14 @@ def group_a(G: np.ndarray) -> None:
     nc = no_correction(G, k=3)
     native = bool(nc.found) and (nc.gamma is not None) and \
         bool(verify_no_correction(G, nc.gamma, k=3))
-    record("A4-ci", "native-CSS C=I (no Clifford correction), brute-verified", True, native)
+    record("A4-ci", "single-qubit transversal T/T-dagger pattern, checked on all codewords", True, native)
     record("A5-Tpattern", "Gamma sign vector = 26 T + 22 T-dagger",
            (26, 22), (int(nc.n_T), int(nc.n_Tdag)))
 
     # A6 negative control: the hardcoded build_48_code() is NOT the native e1.
     Gh = build_48_code()["G"]
     nc_h = no_correction(Gh, k=3)
-    record("A6-negctrl", "hardcoded build_48_code() fails native C=I", False, bool(nc_h.found))
+    record("A6-negctrl", "hardcoded build_48_code() has no single-qubit transversal pattern", False, bool(nc_h.found))
     CLAIMS[-1]["note"] = f"build_48_code status={nc_h.status}"
 
 

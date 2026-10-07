@@ -1,6 +1,6 @@
-"""Native T/T-dagger pattern analysis for one generator matrix G = [K; S] (rows as ints, n <= 64).
+"""Single-qubit transversal T/T-dagger pattern analysis for one generator matrix G = [K; S] (rows as ints, n <= 64).
 
-delta (bit j = 1 means T-dagger on column j) is native iff, for every row G_i and pair G_i&G_k,
+delta (bit j = 1 means T-dagger on column j) gives a single-qubit transversal pattern iff, for every row G_i and pair G_i&G_k,
   |delta & G_i|      = |G_i|/2      (mod 4)
   |delta & G_i & G_k| = |G_i & G_k|/2 (mod 2)
 (together with the CH triple conditions, which do not involve delta). This is equivalent to
@@ -27,7 +27,7 @@ def ch_ok(rows):
 
 
 def native_solutions(rows, n, max_dim=26):
-    """Return (kernel_dim, array of all native deltas as uint64) or (kernel_dim, None) if too big;
+    """Return (kernel_dim, array of all flip vectors for single-qubit transversal patterns as uint64) or (kernel_dim, None) if too big;
     returns (-1, empty) if the mod-2 system is inconsistent."""
     r = len(rows)
     A = list(rows) + [rows[i] & rows[k] for i, k in combinations(range(r), 2)]
@@ -142,7 +142,7 @@ def _popc(x):
 
 @njit(cache=True)
 def _gray_native(x0, basis, rows, targets, n, stop_first):
-    """Histogram of |delta| over native deltas in x0 + span(basis); if stop_first, stop at first."""
+    """Histogram of |delta| over flip vectors for single-qubit transversal patterns in x0 + span(basis); if stop_first, stop at first."""
     hist = np.zeros(n + 1, dtype=np.int64)
     kd = basis.shape[0]
     delta = x0
@@ -301,10 +301,10 @@ def distances_any(rows, n, cols):
 
 # ---------------------------------------------------------------- very large kernels: constructive search
 def native_isotropic_search(rows, n, tries=200, seed=0):
-    """Constructive (one-sided) search for native deltas when the kernel is too large to enumerate.
+    """Constructive (one-sided) search for flip vectors for single-qubit transversal patterns when the kernel is too large to enumerate.
     delta = y0 + t with y0 random in x0 + span(ker) and t in a random subspace I of span(ker) that is
     totally isotropic for every form B_i(e,f) = |e & f & G_i| mod 2; on y0 + I the mod-4 conditions are
-    affine-linear, so they are solved exactly. Returns (kd, list of distinct native deltas found)
+    affine-linear, so they are solved exactly. Returns (kd, list of distinct flip vectors for single-qubit transversal patterns found)
     (kd = -1 if the mod-2 system is inconsistent). Finding none is NOT a proof of non-existence."""
     import random as _r
     rng = _r.Random(seed)

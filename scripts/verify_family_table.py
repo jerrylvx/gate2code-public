@@ -8,7 +8,7 @@ G = [K; S] and the flip vector gamma (gamma_j = 1 means T-dagger on column j):
   * S has actual rank s and distinct nonzero columns, and rank G - rank S = 3;
   * the nine CH conditions: every overlap of one, two, or three distinct rows is even,
     except |K1 & K2 & K3|, which is odd;
-  * the native condition (eq:exp-CI): |v| - 2|gamma & v| = 4 x1 x2 x3 (mod 8) for every
+  * the single-qubit transversal condition (eq:exp-CI): |v| - 2|gamma & v| = 4 x1 x2 x3 (mod 8) for every
     codeword v = K^T x + S^T y;
   * d_X = min |K^T x + S^T y| over x != 0, and d_Z (eq:exp-dZ), by a breadth-first search over
     syndrome-label pairs.
@@ -91,7 +91,7 @@ def analyze(K: list[int], S: list[int], n: int, gamma: int) -> tuple[int, int, i
                 if (y >> l) & 1:
                     v ^= S[l]
             sw = popcount(v) - 2 * popcount(v & gamma)
-            assert (sw - 4 * x[0] * x[1] * x[2]) % 8 == 0, f"native condition fails at x={x}"
+            assert (sw - 4 * x[0] * x[1] * x[2]) % 8 == 0, f"single-qubit transversal condition fails at x={x}"
             if any(x):
                 dx = min(dx, popcount(v))
     # d_Z: breadth-first search over (syndrome, label) states reached by adding columns.

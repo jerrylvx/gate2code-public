@@ -1,4 +1,4 @@
-"""Data construction and I/O for the [[48,3,3]] CSS quasitransversal CCZ code."""
+"""Data construction and I/O for the [[48,3,3]] CSS quasi-transversal CCZ code."""
 
 from __future__ import annotations
 

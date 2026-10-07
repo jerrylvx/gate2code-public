@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check the retained exact receipts cited by Supplementary Note C."""
+"""Check the retained exact lower-bound outputs documented in the README."""
 from __future__ import annotations
 
 import json

@@ -1,7 +1,7 @@
 """Group the label-map classes by the code C1 they generate: two classes span equivalent codes
 with CH structure iff they are related by H and a GL(3,2) change of logical basis (the triple-product
 parity is the determinant form, so every basis of span(k) is again a CH triple). Records, per code,
-how many of its label-permutation classes are native.
+how many of its label-permutation classes admit single-qubit transversal patterns.
 Usage: python code_groups.py 4 2
 """
 import sys, pickle
@@ -57,10 +57,10 @@ def main(p, q):
         nat = [ci for ci in mem if ana["classes"][ci]["native"]]
         rows.append((len(mem), len(nat), sorted(mem)[:3], nat))
     print("codes C1 (GL(3,2) x H orbits):", len(groups))
-    print("codes with a native basis:", sum(1 for r in rows if r[1]))
+    print("codes admitting a single-qubit transversal basis:", sum(1 for r in rows if r[1]))
     for r in sorted(rows, key=lambda r: -r[1]):
         if r[1]:
-            print("  code with", r[0], "classes,", r[1], "native:", r[3])
+            print("  code with", r[0], "classes,", r[1], "single-qubit transversal classes:", r[3])
     print("class-count distribution per code:", sorted(Counter(r[0] for r in rows).items()))
     pickle.dump({"groups": list(groups.values())}, open(HERE / f"codes_p{p}q{q}.pkl", "wb"))
 

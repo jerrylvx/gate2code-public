@@ -2,7 +2,7 @@
 
 Implements the gate-synthesis → distillation code constructions from
 Campbell & Howard, including:
-- Case 1–4 constructions (Sec. III C of the paper)
+- Case 1–4 constructions (Sec. III C of Campbell–Howard)
 - Controlled-unitary construction (Sec. III D)
 - Sub-additivity construction (Sec. III E)
 - Convenience wrappers (Case10, Case11)

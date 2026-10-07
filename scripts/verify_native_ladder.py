@@ -1,18 +1,12 @@
 #!/usr/bin/env python3
-"""Machine check for the CH / native / 8-divisibility ladder on Q48.
+"""Check the signed-weight conditions and 8-divisibility on the stored Q48 code.
 
-Backs docs/notes/native_ladder_2026-08-04.md in the Gates repo. Every claim the
-note makes about how def:exp-CI, eq:exp-Z4 and Section 2's 8-divisibility relate
-is checked here on the stored Q48 generator and its flip set.
+The check compares the quasi-transversal criterion, physical single-qubit
+Clifford corrections, the single-qubit transversal T/T-dagger criterion, and
+the 8-divisibility of C_2. The binary flip vector gamma is the paper's notation;
+physical signs satisfy Gamma_j = (-1)^gamma_j.
 
-The four rungs, in the paper's symbols:
-
-  thm:exp-NS   |c| + 2h(c) == 4 x1x2x3 (mod 8),  h = sum_j lam_j f_j + sum lam_jj' f_j f_j'
-  no CZ        |c| + 2 sum_j lam_j c_j == 4 x1x2x3 (mod 8),   lam in Z_4^n
-  def:exp-CI   sw_Gamma(c) = |c| - 2(gamma . c) == 4 x1x2x3 (mod 8),  gamma in {0,1}^n
-  Section 2    the x = 0 slice at Gamma = 1:  |c| == 0 (mod 8) on C_2
-
-Run from the repo root:  python3 scripts/verify_native_ladder.py
+Run from the repository root: python scripts/verify_native_ladder.py
 """
 from __future__ import annotations
 
@@ -40,13 +34,13 @@ def check(name: str, ok: bool, detail: str = "") -> None:
 
 
 def load() -> tuple[np.ndarray, np.ndarray]:
-    """Return the 9x48 generator G = [K;S] and the binary flip set gamma."""
+    """Return the 9x48 generator G = [K;S] and the binary flip vector gamma."""
     G = np.load(CODE_PATH)["G"] % 2
     res = no_correction(G)
     if not res.found:
-        raise SystemExit(f"no native solution found: {res.status}")
+        raise SystemExit(f"no single-qubit transversal solution found: {res.status}")
     # gate2code stores Gamma as omega exponents 1 (T) and 7 (T-dagger);
-    # delta is the same object as the paper's flip set gamma in {0,1}^n.
+    # delta is the same object as the paper's flip vector gamma in {0,1}^n.
     return G, res.delta.astype(int) % 2
 
 
@@ -69,7 +63,7 @@ def main() -> int:
     sw = weight - 2 * overlap                          # eq:exp-sw
     stab = Z[:, :K_LOGICAL].sum(1) == 0                # the x = 0 slice, c in C_2
 
-    check("stored Q48 admits a native T/T-dagger pattern",
+    check("stored Q48 admits a single-qubit transversal T/T-dagger pattern",
           verify_no_correction(G, np.where(gamma == 1, 7, 1)),
           f"{int((gamma == 0).sum())} T + {int(gamma.sum())} T-dagger")
 
@@ -90,7 +84,7 @@ def main() -> int:
         and all(int((S[a] & S[b] & S[c]).sum()) % 2 == 0
                 for a, b, c in combinations(range(len(S)), 3))
     )
-    check("the ladder reduces mod 2 to S1-S3", ladder and s123, "S1-S3 are the mod-2 shadow")
+    check("the ladder reduces mod 2 to S1-S3", ladder and s123, "S1-S3 are the reductions mod 2")
 
     # --- def:exp-CI and its two rewritings ---------------------------------
     check("eq:exp-CI: sw_Gamma(c) == 4 x1x2x3 (mod 8)", bool((sw % 8 == target).all()),

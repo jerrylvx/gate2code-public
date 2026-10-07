@@ -1,6 +1,6 @@
 """Run the exact classification for (p,q), then analyze every class.
 
-Per class: CH check, all native deltas (exact enumeration), min / set of T-dagger counts,
+Per class: CH check, all flip vectors for single-qubit transversal patterns (exact enumeration), min / set of T-dagger counts,
 all-T possible, d_X, d_Z, weight enumerator of C1, per-block quadratic-rank profile of the labels,
 per-block degree of a minimal delta, stabilizer orders. Also locates the class of the stored
 Q48 witness and runs random invariance tests of the canonical form.

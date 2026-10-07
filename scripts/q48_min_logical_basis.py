@@ -223,7 +223,7 @@ def write_markdown(payload: dict[str, Any], path: Path) -> None:
         )
 
     comp = [
-        "| representative | K row weights | K-fiber sizes | cap fibers | projective lines inside fibers | CH | native |",
+        "| representative | K row weights | K-fiber sizes | cap fibers | projective lines inside fibers | CH | single-qubit transversal |",
         "|---|---|---|---:|---:|---|---|",
     ]
     for rec in payload["comparison"]:
@@ -250,7 +250,7 @@ def write_markdown(payload: dict[str, Any], path: Path) -> None:
             f"- weight-16 logical labels: `{payload['weight_16_logical_labels']}`",
             f"- rank of the weight-16 labels: `{payload['weight_16_label_rank']}`",
             f"- weight-three Z-logical columns: `{payload['z_logical_witness']['column_indices_1_based']}`",
-            f"- its logical syndrome: `{payload['z_logical_witness']['logical_syndrome']}`",
+            f"- its logical label: `{payload['z_logical_witness']['logical_syndrome']}`",
             "- consequence: no basis can have all three rows of weight 16; a lexicographically minimum basis has weights `[16,16,18]`.",
             "- terminology: a projective cap is a point set with no three collinear points; in `PG(5,2)` this means no full line `{a,b,a+b}` lies inside the set.",
             "",
@@ -268,7 +268,7 @@ def write_markdown(payload: dict[str, Any], path: Path) -> None:
             "",
             *comp,
             "",
-            "The cap-normal representative optimizes the column-fiber geometry; it is not a minimum-weight logical basis.",
+            "The cap-normal representative has no projective line in any logical-label fiber. A minimum-weight logical basis is a separate choice.",
         ]
     )
     path.write_text(text + "\n", encoding="utf-8")

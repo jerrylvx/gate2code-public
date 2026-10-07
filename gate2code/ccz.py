@@ -1,7 +1,7 @@
 """
 CCZ coset classification — shared utilities.
 
-Implements the indicator-polynomial pipeline from Gates paper §2.8:
+Utilities for the generator-column parity indicator and the CH conditions:
   1. Seed f0 construction
   2. RM(r-4, r) basis computation
   3. Coset element → G-matrix conversion
@@ -9,8 +9,8 @@ Implements the indicator-polynomial pipeline from Gates paper §2.8:
   5. Distance computation (dx, dz)
   6. Canonical form via pynauty graph isomorphism
 
-Convention (Gates paper, NOT Nezami–Haah):
-  - r variables (no unitality)
+Convention:
+  - r variables; generator rows need not include the all-ones row
   - k=3 logical rows, s=r-3 stabiliser rows
   - Indicator f̄ : F₂ʳ → F₂,  f̄(a) = |{j : G_{·,j} = a}| mod 2
   - CCZ coset: f̄ ∈ f₀ + RM(3,r)⊥ = f₀ + RM(r−4, r)

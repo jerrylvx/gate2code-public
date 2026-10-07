@@ -7,7 +7,7 @@ This is an exact quotient-space computation.  The displayed logical rows are rep
 - weight-16 logical labels: `['010', '100', '110']`
 - rank of the weight-16 labels: `2`
 - weight-three Z-logical columns: `[1, 17, 33]`
-- its logical syndrome: `[1, 0, 1]`
+- its logical label: `[1, 0, 1]`
 - consequence: no basis can have all three rows of weight 16; a lexicographically minimum basis has weights `[16,16,18]`.
 - terminology: a projective cap is a point set with no three collinear points; in `PG(5,2)` this means no full line `{a,b,a+b}` lies inside the set.
 
@@ -33,10 +33,10 @@ This is an exact quotient-space computation.  The displayed logical rows are rep
 
 ## Comparison with cap normal form
 
-| representative | K row weights | K-fiber sizes | cap fibers | projective lines inside fibers | CH | native |
+| representative | K row weights | K-fiber sizes | cap fibers | projective lines inside fibers | CH | single-qubit transversal |
 |---|---|---|---:|---:|---|---|
 | original K | [24, 20, 30] | `5,11,3,5,5,7,5,7` | 6 | 3 | True | True |
 | cap-normal K | [24, 24, 26] | `5,7,7,5,5,7,5,7` | 8 | 0 | True | True |
 | minimum-weight quotient basis | [16, 16, 18] | `11,9,7,5,9,3,3,1` | 7 | 4 | True | True |
 
-The cap-normal representative optimizes the column-fiber geometry; it is not a minimum-weight logical basis.
+The cap-normal representative has no projective line in any logical-label fiber. A minimum-weight logical basis is a separate choice.

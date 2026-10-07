@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Verify the 47T->1CCZ matrix of arXiv:2606.07734v1, Appendix D Eq. (D3).
+"""Verify the 47-qubit code of Jacinto et al., arXiv:2606.07734v1, Appendix D, Eq. (D3).
 
-Transcribed from the published PDF (9 rows x 47 cols, K = rows 1-3, S = rows
-4-9). Validated by 129 parity checks. Result: CH-canonical [[47,3,3]] with
-dX=16, dZ=3, projective, rank 9 -- refuting our earlier s=6 n=47 UNSAT claim.
-NOT native: identity.no_correction returns gf2_unsat.
+The stored matrix has logical rows 1-3 and stabilizer rows 4-9. The check verifies
+the nine CH conditions, ranks, d_X=16 and d_Z=3, then exhibits a binary linear
+contradiction excluding a single-qubit transversal T/T-dagger implementation.
 Writes reports/jacinto_d3_47_verification.json.
 """
 import json

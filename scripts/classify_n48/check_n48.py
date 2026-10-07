@@ -2,8 +2,8 @@
 """Reproduce the complete classification at n = 48 documented in the repository README.
 
 Runs the exact classification of CH label maps on PG(5,2) minus PG(3,2) (classify.py), the
-exact native test of every class (analyze_classes.py), and the grouping of classes into codes C1
-(code_groups.py). Asserts 4,152 classes, 17 native classes, and exactly two codes C1 with a native
+exact single-qubit transversal test of every class (analyze_classes.py), and the grouping of classes into codes C1
+(code_groups.py). Asserts 4,152 classes, 17 single-qubit transversal classes, and exactly two codes C1 with a single-qubit transversal
 pattern, and checks that their weight enumerators are those of the two archived n = 48 codes of
 Table 3. Needs numpy, numba and sympy. Run time about seven minutes.
 Usage: python scripts/classify_n48/check_n48.py
