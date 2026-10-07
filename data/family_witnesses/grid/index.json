@@ -1,0 +1,1244 @@
+[
+ {
+  "file": "p4q2_01.npz",
+  "p": 4,
+  "q": 2,
+  "n": 48,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "7746f9696177d597e8e3954f42619c4eddb4c32f"
+ },
+ {
+  "file": "p4q2_02.npz",
+  "p": 4,
+  "q": 2,
+  "n": 48,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "dfc26e016331ffcd04967b1ecffe301310e72dc7"
+ },
+ {
+  "file": "p4q3_01.npz",
+  "p": 4,
+  "q": 3,
+  "n": 112,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "aa4e33a6bd958cc053aaef4b0251e0407936fd33"
+ },
+ {
+  "file": "p4q3_02.npz",
+  "p": 4,
+  "q": 3,
+  "n": 112,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "390896c52a52750319b4c32671b1583ebcb040bc"
+ },
+ {
+  "file": "p4q3_03.npz",
+  "p": 4,
+  "q": 3,
+  "n": 112,
+  "d_X": 20,
+  "d_Z": 3,
+  "enumerator_sha1": "98f550028ac0e8b4e51baaa3ee2146e6746d182a"
+ },
+ {
+  "file": "p4q3_04.npz",
+  "p": 4,
+  "q": 3,
+  "n": 112,
+  "d_X": 24,
+  "d_Z": 3,
+  "enumerator_sha1": "9d2ca76f4dcc64f8230b08f2c2a433e757239e98"
+ },
+ {
+  "file": "p4q3_05.npz",
+  "p": 4,
+  "q": 3,
+  "n": 112,
+  "d_X": 24,
+  "d_Z": 3,
+  "enumerator_sha1": "9fdecad90ae2f0b40fa86304fbec60d0a36ebb6d"
+ },
+ {
+  "file": "p4q3_06.npz",
+  "p": 4,
+  "q": 3,
+  "n": 112,
+  "d_X": 40,
+  "d_Z": 3,
+  "enumerator_sha1": "0de71c933dd6ddab14b7b6a567fafbcaf7ba1c27"
+ },
+ {
+  "file": "p4q3_07.npz",
+  "p": 4,
+  "q": 3,
+  "n": 112,
+  "d_X": 40,
+  "d_Z": 3,
+  "enumerator_sha1": "7889b5dc3553c681dff1dac2be0ffd4512cb8eb8"
+ },
+ {
+  "file": "p4q3_08.npz",
+  "p": 4,
+  "q": 3,
+  "n": 112,
+  "d_X": 40,
+  "d_Z": 3,
+  "enumerator_sha1": "ca0a61cf509f45fca0be2c363d6a2e417f23cf2e"
+ },
+ {
+  "file": "p4q3_09.npz",
+  "p": 4,
+  "q": 3,
+  "n": 112,
+  "d_X": 40,
+  "d_Z": 3,
+  "enumerator_sha1": "f0c0e1d1a67c88ea0d0f9eaf254df02ede47b3d1"
+ },
+ {
+  "file": "p4q3_10.npz",
+  "p": 4,
+  "q": 3,
+  "n": 112,
+  "d_X": 40,
+  "d_Z": 3,
+  "enumerator_sha1": "9af146c84bbb5b648c52bb91fb35a67f48baab16"
+ },
+ {
+  "file": "p4q3_11.npz",
+  "p": 4,
+  "q": 3,
+  "n": 112,
+  "d_X": 40,
+  "d_Z": 3,
+  "enumerator_sha1": "0501d77d5ac98b6134f29d6c1ff1ce887cee20f2"
+ },
+ {
+  "file": "p4q3_12.npz",
+  "p": 4,
+  "q": 3,
+  "n": 112,
+  "d_X": 42,
+  "d_Z": 3,
+  "enumerator_sha1": "1d0974d51d3e2fb9d8aefa914c27b2a1cb741040"
+ },
+ {
+  "file": "p4q4_01.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "15af69db417f26f9f59d684164c3457d3f537f38"
+ },
+ {
+  "file": "p4q4_02.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "b90d85664bcb9617ad0894ac3234f433f2fa8ad6"
+ },
+ {
+  "file": "p4q4_03.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "b6b913f08b166ecfe40df68d8b60960e376e9dad"
+ },
+ {
+  "file": "p4q4_04.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "26aeebc6f55458c76800122328f75f0fd387cbc9"
+ },
+ {
+  "file": "p4q4_05.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "2e31015067397ebf6b4d123e910e5df12c46f8cd"
+ },
+ {
+  "file": "p4q4_06.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 20,
+  "d_Z": 3,
+  "enumerator_sha1": "3f1892c166ac5d8914fa48cfe1460b1c7839013a"
+ },
+ {
+  "file": "p4q4_07.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 24,
+  "d_Z": 3,
+  "enumerator_sha1": "96ba085c51bb1288f76f249f6a75acdfade389da"
+ },
+ {
+  "file": "p4q4_08.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 40,
+  "d_Z": 3,
+  "enumerator_sha1": "e3ebcbeb20d28dd9765093ae3bb5286509158489"
+ },
+ {
+  "file": "p4q4_09.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 72,
+  "d_Z": 3,
+  "enumerator_sha1": "be1ea5c5156c61842034d8258541204dc47a7b40"
+ },
+ {
+  "file": "p4q4_10.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 88,
+  "d_Z": 3,
+  "enumerator_sha1": "5848d4a8b72cafafc5fce16659b3f66544963a5b"
+ },
+ {
+  "file": "p4q4_11.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 88,
+  "d_Z": 3,
+  "enumerator_sha1": "a46feccb219587cceef5a531caf8c006736674c4"
+ },
+ {
+  "file": "p4q4_12.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 88,
+  "d_Z": 3,
+  "enumerator_sha1": "a44a9f8a2e44b19c16cb81e9d348fc6b5911ee90"
+ },
+ {
+  "file": "p4q4_13.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 92,
+  "d_Z": 3,
+  "enumerator_sha1": "7c409fde08d2c318f9c2b8513bcf791e04b4e43e"
+ },
+ {
+  "file": "p4q4_14.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 96,
+  "d_Z": 3,
+  "enumerator_sha1": "47b27aea2a772803c5e3aa0ab549348a22bba655"
+ },
+ {
+  "file": "p4q4_15.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 96,
+  "d_Z": 3,
+  "enumerator_sha1": "0f78c58e16b75dd3bb7d221dc92decf6b69779fd"
+ },
+ {
+  "file": "p4q4_16.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 96,
+  "d_Z": 3,
+  "enumerator_sha1": "8985f0e4c6db03cb4aa7d0a4fcefd91c67f7de57"
+ },
+ {
+  "file": "p4q4_17.npz",
+  "p": 4,
+  "q": 4,
+  "n": 240,
+  "d_X": 96,
+  "d_Z": 3,
+  "enumerator_sha1": "934f94d213013da02c391a6ba4adf16297887dd4"
+ },
+ {
+  "file": "p4q5_01.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "42d65cc5857c64ba4bcc7b08420d71f921246604"
+ },
+ {
+  "file": "p4q5_02.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "1c6b77d38715d3a1e584dc9f6496f9c607c57cf0"
+ },
+ {
+  "file": "p4q5_03.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "4db86738226549a784a1f921bb9dc9116cf75156"
+ },
+ {
+  "file": "p4q5_04.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "119e826368741b33e53163dd2783ba1a0acc0bf4"
+ },
+ {
+  "file": "p4q5_05.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "974b458790fb36f61f9c6e6f4019d87db0fff3c5"
+ },
+ {
+  "file": "p4q5_06.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "40266b35b44e34538a6184d3f3c5e4b7757a35ca"
+ },
+ {
+  "file": "p4q5_07.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 20,
+  "d_Z": 3,
+  "enumerator_sha1": "eb42d00204079d11b6f49dbadfb0a8b7a9162f52"
+ },
+ {
+  "file": "p4q5_08.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 24,
+  "d_Z": 3,
+  "enumerator_sha1": "246c3e6e7b43f40b921e5ea3b188166085b241ba"
+ },
+ {
+  "file": "p4q5_09.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "f7a9b980b35f3c20a2651efc41ed96d47fa6291a"
+ },
+ {
+  "file": "p4q5_10.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "09cd06246080d61e4fb1e3c40f2969cacdf5082c"
+ },
+ {
+  "file": "p4q5_11.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "f412b533cd2e07ca869f52ee4dc8bf87f7a86efe"
+ },
+ {
+  "file": "p4q5_12.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "c9a7bcae870872a156ad7c7bf1fe0c05965a22d0"
+ },
+ {
+  "file": "p4q5_13.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "478294ce0116747bd6c5feced6118fcd98b6d173"
+ },
+ {
+  "file": "p4q5_14.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "43f9b4938010f1e1a2a20c7b074a84e5d4fe19a9"
+ },
+ {
+  "file": "p4q5_15.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 48,
+  "d_Z": 3,
+  "enumerator_sha1": "13d0cc3a3f161501bf39569199f3acc2f35eb3c1"
+ },
+ {
+  "file": "p4q5_16.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 80,
+  "d_Z": 3,
+  "enumerator_sha1": "1ac150b7433329c91610db731503c6c63d808768"
+ },
+ {
+  "file": "p4q5_17.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 80,
+  "d_Z": 3,
+  "enumerator_sha1": "176f260937b0f957710f5959d776a3c1a4db7552"
+ },
+ {
+  "file": "p4q5_18.npz",
+  "p": 4,
+  "q": 5,
+  "n": 496,
+  "d_X": 212,
+  "d_Z": 3,
+  "enumerator_sha1": "1f3bf6af4316c938f4c2db53cfd6c5b2452301a4"
+ },
+ {
+  "file": "p5q2_01.npz",
+  "p": 5,
+  "q": 2,
+  "n": 96,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "4790bf8b0a26348dffa2d56ece6296dec54719d8"
+ },
+ {
+  "file": "p5q2_02.npz",
+  "p": 5,
+  "q": 2,
+  "n": 96,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "c3a8bafd1c3497427883d98292cdb8e116a57c40"
+ },
+ {
+  "file": "p5q2_03.npz",
+  "p": 5,
+  "q": 2,
+  "n": 96,
+  "d_X": 18,
+  "d_Z": 3,
+  "enumerator_sha1": "20a03d024de09cee5b3651be3703bb3c8179dda6"
+ },
+ {
+  "file": "p5q2_04.npz",
+  "p": 5,
+  "q": 2,
+  "n": 96,
+  "d_X": 20,
+  "d_Z": 3,
+  "enumerator_sha1": "64a2f2f9a52130b88ee34c34459495474b617e1c"
+ },
+ {
+  "file": "p5q2_05.npz",
+  "p": 5,
+  "q": 2,
+  "n": 96,
+  "d_X": 24,
+  "d_Z": 3,
+  "enumerator_sha1": "a0fa52fe34e2db93e79d9155d6929f5976ff1d88"
+ },
+ {
+  "file": "p5q2_06.npz",
+  "p": 5,
+  "q": 2,
+  "n": 96,
+  "d_X": 30,
+  "d_Z": 3,
+  "enumerator_sha1": "e79ff6166f08b6cb017ec302be4db979a2005453"
+ },
+ {
+  "file": "p5q2_07.npz",
+  "p": 5,
+  "q": 2,
+  "n": 96,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "025eb04a6520ccb3b7268a20626b56d5023a1359"
+ },
+ {
+  "file": "p5q2_08.npz",
+  "p": 5,
+  "q": 2,
+  "n": 96,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "4b0d007fa70cdd96e61a5a429c7157b3da87015b"
+ },
+ {
+  "file": "p5q2_09.npz",
+  "p": 5,
+  "q": 2,
+  "n": 96,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "5238dd4b7908125eb270ff6b9f613fbd53e15a6d"
+ },
+ {
+  "file": "p5q2_10.npz",
+  "p": 5,
+  "q": 2,
+  "n": 96,
+  "d_X": 36,
+  "d_Z": 3,
+  "enumerator_sha1": "1d79545e20f67b4b4a20229f8795f205ac1d13bf"
+ },
+ {
+  "file": "p5q2_11.npz",
+  "p": 5,
+  "q": 2,
+  "n": 96,
+  "d_X": 36,
+  "d_Z": 3,
+  "enumerator_sha1": "94f07755064397b119a1e7044f78f0dc9b24ef0e"
+ },
+ {
+  "file": "p5q3_01.npz",
+  "p": 5,
+  "q": 3,
+  "n": 224,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "6d171f4d598f529e79649c6c9be14eccc0af7665"
+ },
+ {
+  "file": "p5q3_02.npz",
+  "p": 5,
+  "q": 3,
+  "n": 224,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "76e783b7dab93c100f734d002724df8da0cea6cb"
+ },
+ {
+  "file": "p5q3_03.npz",
+  "p": 5,
+  "q": 3,
+  "n": 224,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "d4cab8ecb5f73b8cc59dbffe8dc218ca9e107e83"
+ },
+ {
+  "file": "p5q3_04.npz",
+  "p": 5,
+  "q": 3,
+  "n": 224,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "d7695aab62710b0d19c124ff334622752b32032d"
+ },
+ {
+  "file": "p5q3_05.npz",
+  "p": 5,
+  "q": 3,
+  "n": 224,
+  "d_X": 88,
+  "d_Z": 3,
+  "enumerator_sha1": "24e5978cc511553c57307b05fe15ab1458c9e1d1"
+ },
+ {
+  "file": "p5q3_06.npz",
+  "p": 5,
+  "q": 3,
+  "n": 224,
+  "d_X": 88,
+  "d_Z": 3,
+  "enumerator_sha1": "c8143677dee8570e16687f6f82a4242dab25451e"
+ },
+ {
+  "file": "p5q3_07.npz",
+  "p": 5,
+  "q": 3,
+  "n": 224,
+  "d_X": 88,
+  "d_Z": 3,
+  "enumerator_sha1": "fbfb6063b2bc1f33c7ae8a75ea73620ef46d3830"
+ },
+ {
+  "file": "p5q3_08.npz",
+  "p": 5,
+  "q": 3,
+  "n": 224,
+  "d_X": 92,
+  "d_Z": 3,
+  "enumerator_sha1": "f9de28699d6e3f08fd4274d53777e007b9768865"
+ },
+ {
+  "file": "p5q4_01.npz",
+  "p": 5,
+  "q": 4,
+  "n": 480,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "de88b43884c54996638f44d7f834abebbd432ebc"
+ },
+ {
+  "file": "p5q4_02.npz",
+  "p": 5,
+  "q": 4,
+  "n": 480,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "a25b838919b2eab0229547341140fb91a83792af"
+ },
+ {
+  "file": "p5q4_03.npz",
+  "p": 5,
+  "q": 4,
+  "n": 480,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "3023d91f19565e685808fa63edf0e38dfb2355cb"
+ },
+ {
+  "file": "p5q4_04.npz",
+  "p": 5,
+  "q": 4,
+  "n": 480,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "1ffe1fdc7beec13b847f220dd263a4ab29a6f2ac"
+ },
+ {
+  "file": "p5q4_05.npz",
+  "p": 5,
+  "q": 4,
+  "n": 480,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "e94b258f2e7666a34574b188abd4330675d1ccaf"
+ },
+ {
+  "file": "p5q4_06.npz",
+  "p": 5,
+  "q": 4,
+  "n": 480,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "7e05aa85219a698aaf0f235f62e5260f3a2e424c"
+ },
+ {
+  "file": "p5q4_07.npz",
+  "p": 5,
+  "q": 4,
+  "n": 480,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "69f142c4370f309de57023fbea67ab3371394a67"
+ },
+ {
+  "file": "p5q4_08.npz",
+  "p": 5,
+  "q": 4,
+  "n": 480,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "2b2eb3dfe1b9ae3765eb29b506973a650c430787"
+ },
+ {
+  "file": "p5q4_09.npz",
+  "p": 5,
+  "q": 4,
+  "n": 480,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "6c8812242d23576fe5ca93decb17cba5e6280fba"
+ },
+ {
+  "file": "p5q4_10.npz",
+  "p": 5,
+  "q": 4,
+  "n": 480,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "e369698567055d2daa081da55ac894e7d99dd345"
+ },
+ {
+  "file": "p5q4_11.npz",
+  "p": 5,
+  "q": 4,
+  "n": 480,
+  "d_X": 196,
+  "d_Z": 3,
+  "enumerator_sha1": "b3ef64a0a470f2c4e9bc857bcb5dbeb28a78a586"
+ },
+ {
+  "file": "p5q4_12.npz",
+  "p": 5,
+  "q": 4,
+  "n": 480,
+  "d_X": 200,
+  "d_Z": 3,
+  "enumerator_sha1": "04d784f3d304480e071e53d5fb2cdadbc216a992"
+ },
+ {
+  "file": "p5q4_13.npz",
+  "p": 5,
+  "q": 4,
+  "n": 480,
+  "d_X": 200,
+  "d_Z": 3,
+  "enumerator_sha1": "821f0676dbdfc4573032b5001b28afd194c94a68"
+ },
+ {
+  "file": "p5q4_14.npz",
+  "p": 5,
+  "q": 4,
+  "n": 480,
+  "d_X": 204,
+  "d_Z": 3,
+  "enumerator_sha1": "8387fe2cb200249446139e59e1898dcdf6ce4b76"
+ },
+ {
+  "file": "p6q1_01.npz",
+  "p": 6,
+  "q": 1,
+  "n": 64,
+  "d_X": 16,
+  "d_Z": 4,
+  "enumerator_sha1": "bcb36fc92ccf5e4bae398e3c17747ef12068bb14"
+ },
+ {
+  "file": "p6q1_02.npz",
+  "p": 6,
+  "q": 1,
+  "n": 64,
+  "d_X": 16,
+  "d_Z": 4,
+  "enumerator_sha1": "74da4e5261c8585b2937a5be7901092f4b4a76e9"
+ },
+ {
+  "file": "p6q1_03.npz",
+  "p": 6,
+  "q": 1,
+  "n": 64,
+  "d_X": 22,
+  "d_Z": 4,
+  "enumerator_sha1": "8d283033e7ebd5f2e6f6b76088223843873cbdab"
+ },
+ {
+  "file": "p6q1_04.npz",
+  "p": 6,
+  "q": 1,
+  "n": 64,
+  "d_X": 24,
+  "d_Z": 4,
+  "enumerator_sha1": "60fc586d4db33ecff77e8352019d91d5dc1190f0"
+ },
+ {
+  "file": "p6q1_05.npz",
+  "p": 6,
+  "q": 1,
+  "n": 64,
+  "d_X": 28,
+  "d_Z": 4,
+  "enumerator_sha1": "14ac6bd7fca0bc1f304749c322e8c40eb4599197"
+ },
+ {
+  "file": "p6q2_01.npz",
+  "p": 6,
+  "q": 2,
+  "n": 192,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "b1e1ca14daa1213bb535bddbce1c75fcc2a692a3"
+ },
+ {
+  "file": "p6q2_02.npz",
+  "p": 6,
+  "q": 2,
+  "n": 192,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "b08706adf22b4ccce0e8e0be5901a13fac068e63"
+ },
+ {
+  "file": "p6q2_03.npz",
+  "p": 6,
+  "q": 2,
+  "n": 192,
+  "d_X": 20,
+  "d_Z": 3,
+  "enumerator_sha1": "fee656078d757c1579dc71bc35a99b20118bcaa7"
+ },
+ {
+  "file": "p6q2_04.npz",
+  "p": 6,
+  "q": 2,
+  "n": 192,
+  "d_X": 24,
+  "d_Z": 3,
+  "enumerator_sha1": "be52a96b63d3c9aa33468a3e362f14fbc672d9ad"
+ },
+ {
+  "file": "p6q2_05.npz",
+  "p": 6,
+  "q": 2,
+  "n": 192,
+  "d_X": 30,
+  "d_Z": 3,
+  "enumerator_sha1": "25c0a3f37b1cf35330b70337eea4ddda4ca44c6d"
+ },
+ {
+  "file": "p6q2_06.npz",
+  "p": 6,
+  "q": 2,
+  "n": 192,
+  "d_X": 36,
+  "d_Z": 3,
+  "enumerator_sha1": "a1d70ca4599809d7c75647f30df3d09e19e8d387"
+ },
+ {
+  "file": "p6q2_07.npz",
+  "p": 6,
+  "q": 2,
+  "n": 192,
+  "d_X": 36,
+  "d_Z": 3,
+  "enumerator_sha1": "6b1e4aabaa7307a9e67cec585d25481847b9f2a8"
+ },
+ {
+  "file": "p6q2_08.npz",
+  "p": 6,
+  "q": 2,
+  "n": 192,
+  "d_X": 40,
+  "d_Z": 3,
+  "enumerator_sha1": "e6cf967231f3592e4b48cd95a723097f52e2d275"
+ },
+ {
+  "file": "p6q2_09.npz",
+  "p": 6,
+  "q": 2,
+  "n": 192,
+  "d_X": 64,
+  "d_Z": 3,
+  "enumerator_sha1": "daea309cb6445b9e77502ffd4718997f874ff5ef"
+ },
+ {
+  "file": "p6q2_10.npz",
+  "p": 6,
+  "q": 2,
+  "n": 192,
+  "d_X": 72,
+  "d_Z": 3,
+  "enumerator_sha1": "63b35b780171e97787729fd9c1a210b8c783ec53"
+ },
+ {
+  "file": "p6q2_11.npz",
+  "p": 6,
+  "q": 2,
+  "n": 192,
+  "d_X": 72,
+  "d_Z": 3,
+  "enumerator_sha1": "970e201426c72ac6030a1d55791ee7e80fea4a0a"
+ },
+ {
+  "file": "p6q2_12.npz",
+  "p": 6,
+  "q": 2,
+  "n": 192,
+  "d_X": 76,
+  "d_Z": 3,
+  "enumerator_sha1": "77381294a189117837753983b54c0df2793af44f"
+ },
+ {
+  "file": "p6q2_13.npz",
+  "p": 6,
+  "q": 2,
+  "n": 192,
+  "d_X": 78,
+  "d_Z": 3,
+  "enumerator_sha1": "65ad07a1adb9b852da6af8683d9af596a54d1f12"
+ },
+ {
+  "file": "p6q2_14.npz",
+  "p": 6,
+  "q": 2,
+  "n": 192,
+  "d_X": 80,
+  "d_Z": 3,
+  "enumerator_sha1": "55fa8043e791b8dbc33d9329df7758e08e8c50e6"
+ },
+ {
+  "file": "p6q3_01.npz",
+  "p": 6,
+  "q": 3,
+  "n": 448,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "9ef35fab8f3698980195fff79e47a7ff78032512"
+ },
+ {
+  "file": "p6q3_02.npz",
+  "p": 6,
+  "q": 3,
+  "n": 448,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "75655e72cea047766ee7a7052816565fd18ea7d3"
+ },
+ {
+  "file": "p6q3_03.npz",
+  "p": 6,
+  "q": 3,
+  "n": 448,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "5c78fcd14f0cd2ecff2160ea7eb45593ba256ed5"
+ },
+ {
+  "file": "p6q3_04.npz",
+  "p": 6,
+  "q": 3,
+  "n": 448,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "317418bccb948c3ecfb363f748869e9af0a637c4"
+ },
+ {
+  "file": "p6q3_05.npz",
+  "p": 6,
+  "q": 3,
+  "n": 448,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "4a4e360a65aebc1a1c40dec83d4309d503abc020"
+ },
+ {
+  "file": "p6q3_06.npz",
+  "p": 6,
+  "q": 3,
+  "n": 448,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "07124cd8c23855f96664b025886877ce15316a99"
+ },
+ {
+  "file": "p6q3_07.npz",
+  "p": 6,
+  "q": 3,
+  "n": 448,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "bccf29ee5d27a7c2644fba821c94563a2ed03607"
+ },
+ {
+  "file": "p6q3_08.npz",
+  "p": 6,
+  "q": 3,
+  "n": 448,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "ac9cae265f1acc85b22bd0fcf152320c12fed4fc"
+ },
+ {
+  "file": "p6q3_09.npz",
+  "p": 6,
+  "q": 3,
+  "n": 448,
+  "d_X": 72,
+  "d_Z": 3,
+  "enumerator_sha1": "2ce9c6ca6a8cad531247898923ba6b970809ed92"
+ },
+ {
+  "file": "p6q3_10.npz",
+  "p": 6,
+  "q": 3,
+  "n": 448,
+  "d_X": 184,
+  "d_Z": 3,
+  "enumerator_sha1": "db510b7dfb9233bf728edd5986a6b3e4f24f17cf"
+ },
+ {
+  "file": "p6q3_11.npz",
+  "p": 6,
+  "q": 3,
+  "n": 448,
+  "d_X": 192,
+  "d_Z": 3,
+  "enumerator_sha1": "f240756d597335980f3efab6d435144bd0613341"
+ },
+ {
+  "file": "p6q3_12.npz",
+  "p": 6,
+  "q": 3,
+  "n": 448,
+  "d_X": 192,
+  "d_Z": 3,
+  "enumerator_sha1": "ca8a6187e56842c6e1014fd29ad707ccd3805c10"
+ },
+ {
+  "file": "p6q3_13.npz",
+  "p": 6,
+  "q": 3,
+  "n": 448,
+  "d_X": 192,
+  "d_Z": 3,
+  "enumerator_sha1": "eed1c14a60724666efa6c9ae9d61a184c74d98e6"
+ },
+ {
+  "file": "p7q1_01.npz",
+  "p": 7,
+  "q": 1,
+  "n": 128,
+  "d_X": 16,
+  "d_Z": 4,
+  "enumerator_sha1": "2ac3db34a0e8b10295b62b63f4cfc5a802848c0c"
+ },
+ {
+  "file": "p7q1_02.npz",
+  "p": 7,
+  "q": 1,
+  "n": 128,
+  "d_X": 48,
+  "d_Z": 4,
+  "enumerator_sha1": "2a63e880733c0bd022c41b7d706b00c73fc0e3a3"
+ },
+ {
+  "file": "p7q1_03.npz",
+  "p": 7,
+  "q": 1,
+  "n": 128,
+  "d_X": 48,
+  "d_Z": 4,
+  "enumerator_sha1": "29702af221034ffe7153b1b84cead13665aa4cb9"
+ },
+ {
+  "file": "p7q2_01.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "a8f52d08733eb6822039a952b16ca55b27ed0fd7"
+ },
+ {
+  "file": "p7q2_02.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 16,
+  "d_Z": 3,
+  "enumerator_sha1": "128a79ccf68dc9b395a032828cc0c676eecbc392"
+ },
+ {
+  "file": "p7q2_03.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 20,
+  "d_Z": 3,
+  "enumerator_sha1": "8afb85f4cc340f8a9a31a3f43850305a425ac9c8"
+ },
+ {
+  "file": "p7q2_04.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 24,
+  "d_Z": 3,
+  "enumerator_sha1": "63d2447c89263dd5ad78b39c34346eb0b6c596f9"
+ },
+ {
+  "file": "p7q2_05.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 30,
+  "d_Z": 3,
+  "enumerator_sha1": "4531ebf3433132cb070cb0c44db3c8ea93b0ff08"
+ },
+ {
+  "file": "p7q2_06.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "87eaa7dcb948a837f2847c85a73fca4fcd6baeb5"
+ },
+ {
+  "file": "p7q2_07.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 32,
+  "d_Z": 3,
+  "enumerator_sha1": "7621e3dba2bc3a3288420fb71c46842b77d8d112"
+ },
+ {
+  "file": "p7q2_08.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 40,
+  "d_Z": 3,
+  "enumerator_sha1": "fe4c116490cebf6e84841f9c526175235697babb"
+ },
+ {
+  "file": "p7q2_09.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 40,
+  "d_Z": 3,
+  "enumerator_sha1": "8c038b6a156fd4e8fffd458184d786d8bb9c05b2"
+ },
+ {
+  "file": "p7q2_10.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 48,
+  "d_Z": 3,
+  "enumerator_sha1": "85c0fa9cac61bd7ad383b5fe7d2f7082d5b23aa8"
+ },
+ {
+  "file": "p7q2_11.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 48,
+  "d_Z": 3,
+  "enumerator_sha1": "e3473ccb7ca04225a746aad79c89f12b23d6dc91"
+ },
+ {
+  "file": "p7q2_12.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 60,
+  "d_Z": 3,
+  "enumerator_sha1": "ab3c668d099a71714a2e3187de6c175583f3a897"
+ },
+ {
+  "file": "p7q2_13.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 60,
+  "d_Z": 3,
+  "enumerator_sha1": "1319e365f41f9aecf6047c2be2829a7f2233d017"
+ },
+ {
+  "file": "p7q2_14.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 72,
+  "d_Z": 3,
+  "enumerator_sha1": "e969a46c0f5b53cf8b87cac4b999c5c6405b2ee1"
+ },
+ {
+  "file": "p7q2_15.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 80,
+  "d_Z": 3,
+  "enumerator_sha1": "8b5d59e4ebe5eaf6af9e7f0337fbb73e93db2cfc"
+ },
+ {
+  "file": "p7q2_16.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 136,
+  "d_Z": 3,
+  "enumerator_sha1": "bfc3d21c6b0eb04fa56d18e9aabe589c093cc8eb"
+ },
+ {
+  "file": "p7q2_17.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 136,
+  "d_Z": 3,
+  "enumerator_sha1": "3c07cf68b8f4c7e0ce1e9004b2f1bd1d4964a0c9"
+ },
+ {
+  "file": "p7q2_18.npz",
+  "p": 7,
+  "q": 2,
+  "n": 384,
+  "d_X": 160,
+  "d_Z": 3,
+  "enumerator_sha1": "20205d29d5b5c032a9b32e213758d1f1c11d10a9"
+ },
+ {
+  "file": "p8q1_01.npz",
+  "p": 8,
+  "q": 1,
+  "n": 256,
+  "d_X": 16,
+  "d_Z": 4,
+  "enumerator_sha1": "b85856ad89c0395876ce4a76aa28e8b9cb5f9a99"
+ },
+ {
+  "file": "p8q1_02.npz",
+  "p": 8,
+  "q": 1,
+  "n": 256,
+  "d_X": 32,
+  "d_Z": 4,
+  "enumerator_sha1": "b9158ba16e5ea902b25bcd596e068113a0be2a83"
+ },
+ {
+  "file": "p8q1_03.npz",
+  "p": 8,
+  "q": 1,
+  "n": 256,
+  "d_X": 104,
+  "d_Z": 4,
+  "enumerator_sha1": "c3d775b2645a835c0d6ee8282c92dfc00676375a"
+ }
+]

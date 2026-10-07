@@ -5,15 +5,19 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "gate2code-reproducibility"
 version = "0.1.0"
-description = "Public computational companion for Native CCZ codes from projective geometry"
+description = "Public computational companion for Building codes with transversal CCZ using projective geometry and SAT solvers"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 dependencies = [
     "galois>=0.4",
-    "numpy>=1.26",
+    "numpy>=2.0",
     "z3-solver>=4.12",
 ]
+
+[project.optional-dependencies]
+sat = ["pycryptosat>=5.11", "python-sat>=1.8.dev1"]
+classification = ["numba>=0.59", "sympy>=1.12"]
 
 [tool.setuptools.packages.find]
 where = ["."]

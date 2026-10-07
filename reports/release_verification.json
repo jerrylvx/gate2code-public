@@ -1,0 +1,87 @@
+{
+  "scope": "Public README and reproducibility release, 2026-10-06",
+  "python": "3.11.8",
+  "packages": {
+    "numpy": "2.2.6",
+    "numba": "0.61.2",
+    "sympy": "1.14.0",
+    "galois": "0.4.6",
+    "z3-solver": "4.16.0.0",
+    "pycryptosat": "5.16.0",
+    "python-sat": "1.9.dev15"
+  },
+  "checks": {
+    "family": {
+      "exit_code": 0,
+      "witnesses": 138
+    },
+    "classification": {
+      "exit_code": 0,
+      "ordered_triple_orbits": 23940,
+      "CH_triple_classes": 4152,
+      "sign_compatible_classes": 17,
+      "codes_C1": 192,
+      "sign_compatible_codes_C1": 2,
+      "all_class_distances": [
+        16,
+        3
+      ],
+      "archived_weight_enumerators_match": true
+    },
+    "lower_bound_retained_output_consistency": {
+      "exit_code": 0,
+      "large_sweeps_rerun": false
+    },
+    "sat_encoder_and_search": {
+      "exit_code": 0,
+      "pinned_control": "sat",
+      "fresh_output": {
+        "task": "s6_n48",
+        "result": "sat",
+        "seconds": 0.7,
+        "threads": 1,
+        "control": "sat",
+        "n": 48,
+        "G_rows": [
+          "110100011001000001011010001000011001100011101001",
+          "100100100001011101010111001111101011001111101011",
+          "010001110101010100000110000011100001110000110101",
+          "000000000000000000000000111111111111111111111111",
+          "000000000000111111111111000000000000111111111111",
+          "000000111111000000111111000000111111000000111111",
+          "001111001111001111001111000011000011000011000011",
+          "010011010011010011010011001101001101001101001101",
+          "100101010101100101010101010110010101010110010101"
+        ],
+        "rank_G": 9,
+        "dX": 16,
+        "dZ": 3
+      }
+    },
+    "package_installation": {
+      "exit_code": 0,
+      "isolated_virtual_environment": true,
+      "inherited_scientific_packages": true
+    },
+    "README_local_links": {
+      "missing": []
+    }
+  },
+  "source_sha256": {
+    "pyproject.toml": "10827ba9279feeda030b73b0902f03295d16075dd8e654179c4bf75eca5f8a21",
+    "scripts/verify_family_table.py": "7d01cd7bd4e3432a28a41d36553797767e3eb0d52463e6e5d8a2f85a9e484a61",
+    "scripts/classify_n48/analyze_classes.py": "19b16e3d612e342cd1dab92e11eb0e1308c3f266129e8849c9561b1054b56c9f",
+    "scripts/classify_n48/check_n48.py": "5ffe8a21adbe1237c0e033db16a2e93450738082e16ba4f96f4a03b09a16f4ba",
+    "scripts/classify_n48/classify.py": "06bf005ae4972704b17d880479413793605884e7c7391fb99b63500ce9f2ce00",
+    "scripts/classify_n48/code_groups.py": "f72f3be1038a91f998b96920b243974c34a5a769309215b7eae6d4d2ae40046c",
+    "scripts/classify_n48/native.py": "e977c1586d10a18e978e935e2d40277858ef73aa2806e200565453a0cd81e621",
+    "scripts/classify_n48/orbits_nb.py": "e7650903fd03f3071e08e46e1235315ebfca9ecf74435034f8adc53d0fca6f33",
+    "scripts/classify_n48/sc_lib.py": "f948a8258a111431eea88cc0ce594762d02104706c087ceb21f2cb501131d10b",
+    "scripts/cms_verify_instance.py": "6345c5195e1121b66bacf7bd07f568d855e47ebbda8092193774d26c05656bd5",
+    "scripts/verify_supplement_receipts.py": "ed9f98a8112dc0795a4dda2f20e69faf63d18843f18145d0fea7a8cc8aec6860"
+  },
+  "limitations": [
+    "Large lower-bound sweeps were not rerun; their retained outputs and aggregate consistency were checked.",
+    "Execution checks validate the implemented computations, not the independent mathematical reductions in the paper."
+  ]
+}
