@@ -2,6 +2,8 @@
 
 Public reproducibility package for the paper by Bohan Lu and Kenneth R. Brown.
 
+Paper: [arXiv:2610.09341](https://arxiv.org/abs/2610.09341).
+
 This README contains the reproduction instructions, computational coverage arguments,
 and classification details supporting the paper. Equation, table, algorithm, and
 appendix numbers refer to the paper.
@@ -391,10 +393,21 @@ Please cite the paper when using the constructions or results:
 ```text
 Bohan Lu and Kenneth R. Brown.
 Building codes with transversal CCZ using projective geometry and SAT solvers.
-2026.
+arXiv:2610.09341 [quant-ph], 2026.
+https://arxiv.org/abs/2610.09341
 ```
 
-The permanent arXiv link will be added after the article is publicly announced.
+```bibtex
+@misc{lu2026building,
+  title = {Building codes with transversal {CCZ} using projective geometry and {SAT} solvers},
+  author = {Lu, Bohan and Brown, Kenneth R.},
+  year = {2026},
+  eprint = {2610.09341},
+  archivePrefix = {arXiv},
+  primaryClass = {quant-ph},
+  url = {https://arxiv.org/abs/2610.09341}
+}
+```
 
 ## License
 
